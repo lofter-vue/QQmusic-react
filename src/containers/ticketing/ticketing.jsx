@@ -16,15 +16,14 @@ export default class Ticketing extends Component {
   state={
     currentNavIndex:0,
     data:concert,
-    dataArr:[0,concert,livehouse],
+    all:ticketAll.getFirstData.data.classes,
+    dataArr:[concert,concert,livehouse],
     banners:ticketAll.getFirstData.data.banners
   }
 
   //改变当前选中导航的index
   updateIndex(index){
     let data = this.state.dataArr[index]
-    console.log(data);
-    
     this.setState({
       currentNavIndex:index,
       data,
@@ -55,7 +54,7 @@ export default class Ticketing extends Component {
         {
           
         }
-        <TicketContentList isShow={this.state.currentNavIndex===0}/>
+        <TicketContentList isShow={this.state.currentNavIndex===0} data={this.state.all}/>
         <TicketContentDetail isShow={this.state.currentNavIndex!==0} data={this.state.data}/>
       </div>
     )
