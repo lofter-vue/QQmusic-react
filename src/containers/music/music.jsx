@@ -1,15 +1,6 @@
 import React,{Component} from 'react'
-import {Route,Switch,Redirect,NavLink} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import './css/music.less';
-import Home from "../home/home";
-import Singer from "../singer/singer";
-import Dish from "../dish/dish";
-import Ranking from "../ranking/ranking";
-import Classify from "../classify/classify";
-import Radio from "../radio/radio";
-import Mv from "../mv/mv";
-import Album from "../album/album";
-import Ticket from "../Ticketing/Ticketing";
 
 export default class MyComponent extends Component{
   render(){
@@ -25,7 +16,7 @@ export default class MyComponent extends Component{
             <li><NavLink to='/index/music/radio' activeClassName='active' className='music-list'>电台</NavLink></li>
             <li><NavLink to='/index/music/mv' activeClassName='active' className='music-list'>MV</NavLink></li>
             <li><NavLink to='/index/music/album' activeClassName='active' className='music-list'>数字专辑</NavLink></li>
-            <li><NavLink to='/index/music/ticket' activeClassName='active' className='music-list'>票务</NavLink></li>
+            <li><NavLink to='/index/music/ticketing' activeClassName='active' className='music-list'>票务</NavLink></li>
           </ul>
         </div>
       </div>
