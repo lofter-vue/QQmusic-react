@@ -9,7 +9,7 @@ export default class SwiperComponent extends Component{
 
   componentDidMount() {
     //new swiper
-    new Swiper('.swiper-container', {
+    var mySwiper = new Swiper('.swiper-container', {
       slidesPerView: 3,
       spaceBetween: -300,
       centeredSlides: true,
@@ -23,8 +23,6 @@ export default class SwiperComponent extends Component{
         prevEl: '.swiper-button-prev',
       },
     });
-    console.log('new swiper');
-    
   }
 
   render(){
