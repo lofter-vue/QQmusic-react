@@ -36,8 +36,21 @@ export default class Album extends Component{
             <div className="swiper-button-next"></div>
           </div>
         </div>
-        <div className="mian">
-
+        <div className="main">
+          <div className="main_header">
+            <h1>最新上架</h1>
+          </div>
+          <div className="main_content">
+            <ul className="main_content_list">
+              <li>
+                
+              </li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
         </div>
       </div>
     )
@@ -76,6 +89,5 @@ export default class Album extends Component{
         mySwiper.navigation.$nextEl.addClass('hide');
         mySwiper.navigation.$prevEl.addClass('hide');
       }
-
   }
 }
