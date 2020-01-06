@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { NavLink,Link} from 'react-router-dom'
+import { NavLink} from 'react-router-dom'
 import "./css/header.less";
 import Logo from "./img/logo.png";
 import {Icon} from 'antd';
