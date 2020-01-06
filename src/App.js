@@ -9,7 +9,7 @@ export default class App extends Component{
       <div className="app">
         <Switch>
           <Route path="/index" component={Index}/>
-          <Redirect to='/index/music'/>
+          <Redirect to='/index/music/home'/>
         </Switch>
       </div>
     )
