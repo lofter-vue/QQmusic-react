@@ -2,13 +2,14 @@ import React,{Component} from 'react'
 import {Route,Switch,Redirect,NavLink} from 'react-router-dom'
 import './css/music.less';
 import Home from "../home/home";
-import Home from "../singer/singer";
-import Home from "../dish/dish";
-import Home from "../ranking/ranking";
-import Home from "../classify/classify";
-import Home from "../radio/radio";
-import Home from "../mv/mv";
-import Home from "../album/album";
+import Singer from "../singer/singer";
+import Dish from "../dish/dish";
+import Ranking from "../ranking/ranking";
+import Classify from "../classify/classify";
+import Radio from "../radio/radio";
+import Mv from "../mv/mv";
+import Album from "../album/album";
+import Ticket from "../Ticketing/Ticketing";
 
 export default class MyComponent extends Component{
   render(){
