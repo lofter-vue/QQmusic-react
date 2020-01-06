@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import {Route,Switch,NavLink,Link} from 'react-router-dom'
+import {Route,Switch,NavLink,Link, Redirect} from 'react-router-dom'
 import { Icon } from "antd";
 import './css/home.less'
 import Foryou from "./music/foryou/foryou";
@@ -53,6 +53,7 @@ export default class Home extends Component{
                 <Route path="/index/music/home/foryou" component={Foryou}/>
                 <Route path="/index/music/home/classic" component={Classic}/>
                 <Route path="/index/music/home/recommend" component={Recommend}/>
+                <Redirect to="/index/music/home/foryou"/>
               </Switch>
             </div>
           </div>
