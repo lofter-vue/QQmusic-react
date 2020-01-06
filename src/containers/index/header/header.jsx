@@ -13,7 +13,7 @@ export default class MyComponent extends Component {
         </span>
         <ul>
           {/* <li><Link to='/music'>音乐馆</Link></li> */}
-          <li><NavLink className='list' to='/index/music' activeClassName='listHover'>音乐馆</NavLink></li>
+          <li><NavLink className='list' to='/index/music/home' activeClassName='listHover'>音乐馆</NavLink></li>
           <li><NavLink className='list' to='/index/mymusic' activeClassName='listHover'>我的音乐</NavLink></li>
           <li><NavLink className='list' to='/index/client' activeClassName='listHover'>客户端</NavLink></li>
           <li><NavLink className='list' to='/index/open' activeClassName='listHover'>开放平台</NavLink></li>
