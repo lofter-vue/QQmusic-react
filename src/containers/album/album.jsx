@@ -1,4 +1,5 @@
 import React,{Component} from 'react'
+import './css/album.less'
 import Swiper from 'swiper/js/swiper.js'
 import 'swiper/css/swiper.min.css';
 
