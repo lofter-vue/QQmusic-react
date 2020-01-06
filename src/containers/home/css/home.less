@@ -1,0 +1,94 @@
+.home{
+  width: 100%;
+  height: 532px;
+  overflow: hidden;
+  .home-music-wrapper{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    &:hover{
+      
+      .home-music-left{
+        transition: transform 0.5s;
+        transform: translateX(79px);
+      }
+      .home-music-right{
+        transition: transform 0.5s;
+        transform: translateX(-79px);
+      }
+    }
+    .home-music-inner{
+      width: 1200px;
+      // height: 532px;
+      background: yellow;
+      position: relative;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      .home-header{
+        width: 100%;
+        height: 114px;
+        padding-top:38px;
+        text-align: center;
+        box-sizing: border-box;
+        font-size: 30px;
+        letter-spacing:10px;
+        font-weight: bold;
+      }
+      .home-music-nav{
+        width: 100%;
+        height: 50px;
+        background: blue;
+        position: relative;
+        .home-music-nav-wrapper{
+          display: inline-block;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translate(-50%);
+          .home-list{
+            display: inline-block;
+            font-size: 15px;
+            margin: 0 24px;
+          }
+        }
+      }
+      .home-music-contianer{
+        width: 1200px;
+        height: 310px;
+        background: pink;
+      }
+    }
+    .home-music-left{
+      position: absolute;
+      top: 230px;
+      left: -79px;
+      width: 79px;
+      height: 108px;
+      background: #ECECEC;
+      text-align: center;
+      line-height: 108px;
+      font-size: 32px;
+      transition: transform 0.5s;
+      &:hover{
+        background: #E0E0E0;
+      }
+    }
+    .home-music-right{
+      position: absolute;
+      top: 230px;
+      right: -79px;
+      width: 79px;
+      height: 108px;
+      background: #ECECEC;
+      text-align: center;
+      line-height: 108px;
+      font-size: 32px;
+      transition: transform 0.5s;
+      &:hover{
+        background: #E0E0E0;
+      }
+    }
+  }
+
+}
