@@ -36,7 +36,6 @@ class ticketContentList extends Component {
                     return
                   }else if(index > 0 && index < 5){
                     return(
-                    
                         <div className="ticket_grid__item js_open_link" data-url="https://y.qq.com/yanchu/detail.html?IDS=134212,110" key={list.show_id}>
                           <div  className="ticket_grid__media"><img src={list.pic_url} className="ticket_grid__media_img" alt="林宥嘉idol世界巡回演唱会 无锡站"/></div>
                             <div  className="ticket_grid__bd">
@@ -46,15 +45,13 @@ class ticketContentList extends Component {
                               <p className="ticket_grid__txt">无锡市体育中心-体育馆</p>
                               <p className="ticket_grid__price"><em>¥ 380</em> 起<span className="ticket_grid__tag"><Icon className='zuan' type="sketch" />立减</span></p>
                             </div>
-                          </div>
-                        
-                        
+                          </div>  
                     )
                   }
                 })
               }
-              </div>
-              </div>
+                  </div>
+                </div>
               </div>
             )
           })
