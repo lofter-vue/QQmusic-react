@@ -1,0 +1,111 @@
+.js_detail_container{
+  position: relative;
+  .js_detail_content{
+    z-index: 2;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    .mod_ticket_list{
+      margin-bottom: 44px;
+      .js_detail_list{
+        overflow: hidden;
+        .js_open_link{
+          padding: 20px 0;
+          border-bottom: solid 1px rgba(0,0,0,.1);
+          .ticket_list__media{
+            float: left;
+            margin-right: 30px;
+            width: 224px;
+            height: 298px;
+            overflow: hidden;
+            img{
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transform: scale(1) translateZ(0);
+              transition: transform .75s;
+              &:hover{
+                transform: scale(1.1) translateZ(0);
+              }
+            }
+          }
+          .ticket_list__bd{
+            position: relative;
+            height: 298px;
+            overflow: hidden;
+            .ticket_list__tit{
+              margin-bottom: 10px;
+              padding-top: 26px;
+              font-size: 20px;
+              color: #333;
+              font-weight: 400;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+            }
+            .ticket_list__txt{
+              margin-bottom: 24px;
+              font-size: 14px;
+              color: #777;
+              line-height: 1.6;
+            }
+            .ticket_list__location{
+              margin-bottom: 2px;
+            }
+            .ticket_list__date{
+              display: block;
+              font-size: 16px;
+              color: #333;
+            }
+            .ticket_list__price{
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              font-size: 16px;
+              color: #01bc83;
+              em{
+                font-size: 26px;
+              }
+              .ticket_grid__tag{
+                margin-left: 6px;
+                padding: 3px 6px;
+                font-size: 12px;
+                color: #fff;
+                border-radius: 2px;
+                background-color: #01bc83;
+                vertical-align: 5px;
+                .zuan{
+                  margin: 0 3px;
+                }
+              }
+            }
+            .ticket_list__ctrl{
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              .ticket_list__btn{
+                display: block;
+                width: 206px;
+                height: 60px;
+                line-height: 60px;
+                font-size: 28px;
+                color: #fff;
+                text-align: center;
+                border-radius: 4px;
+                background-color: #01bc83;
+                transition: all .2s ease-in-out;
+                &:hover{
+                  background-color: #31C27C;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

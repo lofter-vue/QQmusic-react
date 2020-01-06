@@ -4,17 +4,30 @@ import './css/city&search.less'
 const { Search } = Input;
 
 class CitySearch extends Component {
+
+  state={
+    isShowCity:false,
+    display:'none'
+  }
+
+  showCity = () => {
+    this.setState((prevstate)=>({
+      isShowCity:!prevstate.isShowCity,
+      display:prevstate.isShowCity?'none':'block'
+    }))
+  }
+
   render() {
     return (
       <div className='CitySearchContainer'>
         <div>
           <div className="user_ctrl__btn">
-            <div className='selector'> 
+            <div className='selector' onClick={this.showCity}> 
               <p className="user_ctrl__btn_box js_open_city_dialog" data-id="0">全国</p>
               <Icon type="down" />
             </div>
             <Search className='antDsearch' placeholder="搜索票务" size="large" onSearch={value => console.log(value)} enterButton  style={{width:489+"px",height:50+"px"}}/>
-            <div className="popup_data_detail popup_detail_city js_city_dialog">
+            <div className="popup_data_detail popup_detail_city js_city_dialog" style={{display:this.state.display}}>
               <div className="popup_data_detail__cont">
                 <div className="popup_detail_city__grid">
                   <div className="popup_detail_city__item">
@@ -644,6 +657,10 @@ class CitySearch extends Component {
 
               </div>
               <i className="popup_data_detail__arrow"></i>
+            </div>
+            <div className='myOrder'>
+              我的订单
+              <Icon className='rightArrow' type="right" />
             </div>
           </div>
         </div>
