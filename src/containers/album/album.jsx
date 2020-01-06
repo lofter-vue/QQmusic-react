@@ -70,17 +70,67 @@ export default class Album extends Component{
               <li className="list_item">
                 <div className="list_item_img">
                   <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000004fGBhL2Jr0qt.jpg?max_age=2592000" alt=""/>
                   </a>
                 </div>
                 <h4 className="list_item_text">
                   <a href="javascript:;">
-                    <span>I=U=WE:序</span>
+                    <span>What If</span>
                   </a>
                 </h4>
                 <div className="list_item_author">
                   <a href="javascript:;">
-                    <span>BOY STORY</span>
+                    <span>谭晶</span>
+                  </a>
+                </div>
+                <div className="list_item_price">
+                  <span>￥3</span>
+                  <div className="list_item_button">
+                    <a href="javascript:;">
+                      <span>立即购买</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li className="list_item">
+                <div className="list_item_img">
+                  <a href="javascript:;">
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000001sWLyI25K8lv.jpg?max_age=2592000" alt=""/>
+                  </a>
+                </div>
+                <h4 className="list_item_text">
+                  <a href="javascript:;">
+                    <span>当你和心跳一起出现</span>
+                  </a>
+                </h4>
+                <div className="list_item_author">
+                  <a href="javascript:;">
+                    <span>萧亚轩</span>
+                  </a>
+                </div>
+                <div className="list_item_price">
+                  <span>￥3</span>
+                  <div className="list_item_button">
+                    <a href="javascript:;">
+                      <span>立即购买</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li className="list_item">
+                <div className="list_item_img">
+                  <a href="javascript:;">
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000003zG2jn46gPpO.jpg?max_age=2592000" alt=""/>
+                  </a>
+                </div>
+                <h4 className="list_item_text">
+                  <a href="javascript:;">
+                    <span>过海</span>
+                  </a>
+                </h4>
+                <div className="list_item_author">
+                  <a href="javascript:;">
+                    <span>痛仰乐队</span>
                   </a>
                 </div>
                 <div className="list_item_price">
@@ -95,206 +145,21 @@ export default class Album extends Component{
               <li className="list_item">
                 <div className="list_item_img">
                   <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000003wcPYx2oSX5Y.jpg?max_age=2592000" alt=""/>
                   </a>
                 </div>
                 <h4 className="list_item_text">
                   <a href="javascript:;">
-                    <span>I=U=WE:序</span>
+                    <span>Starry Night - The 2nd Mini Album</span>
                   </a>
                 </h4>
                 <div className="list_item_author">
                   <a href="javascript:;">
-                    <span>BOY STORY</span>
+                    <span>BoA(宝儿)</span>
                   </a>
                 </div>
                 <div className="list_item_price">
-                  <span>￥10</span>
-                  <div className="list_item_button">
-                    <a href="javascript:;">
-                      <span>立即购买</span>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li className="list_item">
-                <div className="list_item_img">
-                  <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
-                  </a>
-                </div>
-                <h4 className="list_item_text">
-                  <a href="javascript:;">
-                    <span>I=U=WE:序</span>
-                  </a>
-                </h4>
-                <div className="list_item_author">
-                  <a href="javascript:;">
-                    <span>BOY STORY</span>
-                  </a>
-                </div>
-                <div className="list_item_price">
-                  <span>￥10</span>
-                  <div className="list_item_button">
-                    <a href="javascript:;">
-                      <span>立即购买</span>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li className="list_item">
-                <div className="list_item_img">
-                  <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
-                  </a>
-                </div>
-                <h4 className="list_item_text">
-                  <a href="javascript:;">
-                    <span>I=U=WE:序</span>
-                  </a>
-                </h4>
-                <div className="list_item_author">
-                  <a href="javascript:;">
-                    <span>BOY STORY</span>
-                  </a>
-                </div>
-                <div className="list_item_price">
-                  <span>￥10</span>
-                  <div className="list_item_button">
-                    <a href="javascript:;">
-                      <span>立即购买</span>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              
-            </ul>
-          </div>
-        </div>
-        <div className="main">
-          <div className="main_header">
-            <h2>最新上架</h2>
-          </div>
-          <div className="main_content">
-            <ul className="main_content_list">
-              <li className="list_item">
-                <div className="list_item_img">
-                  <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
-                  </a>
-                </div>
-                <h4 className="list_item_text">
-                  <a href="javascript:;">
-                    <span>I=U=WE:序</span>
-                  </a>
-                </h4>
-                <div className="list_item_author">
-                  <a href="javascript:;">
-                    <span>BOY STORY</span>
-                  </a>
-                </div>
-                <div className="list_item_price">
-                  <span>￥10</span>
-                  <div className="list_item_button">
-                    <a href="javascript:;">
-                      <span>立即购买</span>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li className="list_item">
-                <div className="list_item_img">
-                  <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
-                  </a>
-                </div>
-                <h4 className="list_item_text">
-                  <a href="javascript:;">
-                    <span>I=U=WE:序</span>
-                  </a>
-                </h4>
-                <div className="list_item_author">
-                  <a href="javascript:;">
-                    <span>BOY STORY</span>
-                  </a>
-                </div>
-                <div className="list_item_price">
-                  <span>￥10</span>
-                  <div className="list_item_button">
-                    <a href="javascript:;">
-                      <span>立即购买</span>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li className="list_item">
-                <div className="list_item_img">
-                  <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
-                  </a>
-                </div>
-                <h4 className="list_item_text">
-                  <a href="javascript:;">
-                    <span>I=U=WE:序</span>
-                  </a>
-                </h4>
-                <div className="list_item_author">
-                  <a href="javascript:;">
-                    <span>BOY STORY</span>
-                  </a>
-                </div>
-                <div className="list_item_price">
-                  <span>￥10</span>
-                  <div className="list_item_button">
-                    <a href="javascript:;">
-                      <span>立即购买</span>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li className="list_item">
-                <div className="list_item_img">
-                  <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
-                  </a>
-                </div>
-                <h4 className="list_item_text">
-                  <a href="javascript:;">
-                    <span>I=U=WE:序</span>
-                  </a>
-                </h4>
-                <div className="list_item_author">
-                  <a href="javascript:;">
-                    <span>BOY STORY</span>
-                  </a>
-                </div>
-                <div className="list_item_price">
-                  <span>￥10</span>
-                  <div className="list_item_button">
-                    <a href="javascript:;">
-                      <span>立即购买</span>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li className="list_item">
-                <div className="list_item_img">
-                  <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
-                  </a>
-                </div>
-                <h4 className="list_item_text">
-                  <a href="javascript:;">
-                    <span>I=U=WE:序</span>
-                  </a>
-                </h4>
-                <div className="list_item_author">
-                  <a href="javascript:;">
-                    <span>BOY STORY</span>
-                  </a>
-                </div>
-                <div className="list_item_price">
-                  <span>￥10</span>
+                  <span>￥15</span>
                   <div className="list_item_button">
                     <a href="javascript:;">
                       <span>立即购买</span>
@@ -308,28 +173,28 @@ export default class Album extends Component{
         </div>
         <div className="main">
           <div className="main_header">
-            <h2>最新上架</h2>
+            <h2>本周热销</h2>
           </div>
           <div className="main_content">
             <ul className="main_content_list">
               <li className="list_item">
                 <div className="list_item_img">
                   <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000000d4ZXm4JElgo.jpg?max_age=2592000" alt=""/>
                   </a>
                 </div>
                 <h4 className="list_item_text">
                   <a href="javascript:;">
-                    <span>I=U=WE:序</span>
+                    <span>哇</span>
                   </a>
                 </h4>
                 <div className="list_item_author">
                   <a href="javascript:;">
-                    <span>BOY STORY</span>
+                    <span>李宇春</span>
                   </a>
                 </div>
                 <div className="list_item_price">
-                  <span>￥10</span>
+                  <span>￥20</span>
                   <div className="list_item_button">
                     <a href="javascript:;">
                       <span>立即购买</span>
@@ -340,21 +205,21 @@ export default class Album extends Component{
               <li className="list_item">
                 <div className="list_item_img">
                   <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000002Tryw33HIGNP.jpg?max_age=2592000" alt=""/>
                   </a>
                 </div>
                 <h4 className="list_item_text">
                   <a href="javascript:;">
-                    <span>I=U=WE:序</span>
+                    <span>陈情令 国风音乐专辑</span>
                   </a>
                 </h4>
                 <div className="list_item_author">
                   <a href="javascript:;">
-                    <span>BOY STORY</span>
+                    <span>华语群星</span>
                   </a>
                 </div>
                 <div className="list_item_price">
-                  <span>￥10</span>
+                  <span>￥20</span>
                   <div className="list_item_button">
                     <a href="javascript:;">
                       <span>立即购买</span>
@@ -365,21 +230,21 @@ export default class Album extends Component{
               <li className="list_item">
                 <div className="list_item_img">
                   <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000003aHMFV1IqSWE.jpg?max_age=2592000" alt=""/>
                   </a>
                 </div>
                 <h4 className="list_item_text">
                   <a href="javascript:;">
-                    <span>I=U=WE:序</span>
+                    <span>伍六七 原生大碟</span>
                   </a>
                 </h4>
                 <div className="list_item_author">
                   <a href="javascript:;">
-                    <span>BOY STORY</span>
+                    <span>华语群星</span>
                   </a>
                 </div>
                 <div className="list_item_price">
-                  <span>￥10</span>
+                  <span>￥15</span>
                   <div className="list_item_button">
                     <a href="javascript:;">
                       <span>立即购买</span>
@@ -390,21 +255,21 @@ export default class Album extends Component{
               <li className="list_item">
                 <div className="list_item_img">
                   <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000019Oi682i0RfX.jpg?max_age=2592000" alt=""/>
                   </a>
                 </div>
                 <h4 className="list_item_text">
                   <a href="javascript:;">
-                    <span>I=U=WE:序</span>
+                    <span>YOUNG</span>
                   </a>
                 </h4>
                 <div className="list_item_author">
                   <a href="javascript:;">
-                    <span>BOY STORY</span>
+                    <span>蔡徐坤</span>
                   </a>
                 </div>
                 <div className="list_item_price">
-                  <span>￥10</span>
+                  <span>￥5</span>
                   <div className="list_item_button">
                     <a href="javascript:;">
                       <span>立即购买</span>
@@ -415,21 +280,21 @@ export default class Album extends Component{
               <li className="list_item">
                 <div className="list_item_img">
                   <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000002CFj0T2id2cJ.jpg?max_age=2592000" alt=""/>
                   </a>
                 </div>
                 <h4 className="list_item_text">
                   <a href="javascript:;">
-                    <span>I=U=WE:序</span>
+                    <span>reality in BLACK</span>
                   </a>
                 </h4>
                 <div className="list_item_author">
                   <a href="javascript:;">
-                    <span>BOY STORY</span>
+                    <span>MAMAMOO</span>
                   </a>
                 </div>
                 <div className="list_item_price">
-                  <span>￥10</span>
+                  <span>￥20</span>
                   <div className="list_item_button">
                     <a href="javascript:;">
                       <span>立即购买</span>
@@ -443,28 +308,28 @@ export default class Album extends Component{
         </div>
         <div className="main">
           <div className="main_header">
-            <h2>最新上架</h2>
+            <h2>音乐人专区</h2>
           </div>
           <div className="main_content">
             <ul className="main_content_list">
               <li className="list_item">
                 <div className="list_item_img">
                   <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000003EHTi528PvZt.jpg?max_age=2592000" alt=""/>
                   </a>
                 </div>
                 <h4 className="list_item_text">
                   <a href="javascript:;">
-                    <span>I=U=WE:序</span>
+                    <span>玩</span>
                   </a>
                 </h4>
                 <div className="list_item_author">
                   <a href="javascript:;">
-                    <span>BOY STORY</span>
+                    <span>陈粒</span>
                   </a>
                 </div>
                 <div className="list_item_price">
-                  <span>￥10</span>
+                  <span>￥25</span>
                   <div className="list_item_button">
                     <a href="javascript:;">
                       <span>立即购买</span>
@@ -475,21 +340,21 @@ export default class Album extends Component{
               <li className="list_item">
                 <div className="list_item_img">
                   <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000003iPptk0JI1D5.jpg?max_age=2592000" alt=""/>
                   </a>
                 </div>
                 <h4 className="list_item_text">
                   <a href="javascript:;">
-                    <span>I=U=WE:序</span>
+                    <span>十年之前和三个爱情故事</span>
                   </a>
                 </h4>
                 <div className="list_item_author">
                   <a href="javascript:;">
-                    <span>BOY STORY</span>
+                    <span>嘿！！！</span>
                   </a>
                 </div>
                 <div className="list_item_price">
-                  <span>￥10</span>
+                  <span>￥23</span>
                   <div className="list_item_button">
                     <a href="javascript:;">
                       <span>立即购买</span>
@@ -500,21 +365,21 @@ export default class Album extends Component{
               <li className="list_item">
                 <div className="list_item_img">
                   <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000004HxZdX4d8v9J.jpg?max_age=2592000" alt=""/>
                   </a>
                 </div>
                 <h4 className="list_item_text">
                   <a href="javascript:;">
-                    <span>I=U=WE:序</span>
+                    <span>感+</span>
                   </a>
                 </h4>
                 <div className="list_item_author">
                   <a href="javascript:;">
-                    <span>BOY STORY</span>
+                    <span>旅行团乐队</span>
                   </a>
                 </div>
                 <div className="list_item_price">
-                  <span>￥10</span>
+                  <span>￥12</span>
                   <div className="list_item_button">
                     <a href="javascript:;">
                       <span>立即购买</span>
@@ -525,21 +390,21 @@ export default class Album extends Component{
               <li className="list_item">
                 <div className="list_item_img">
                   <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000000BQx3u1M0SVw.jpg?max_age=2592000" alt=""/>
                   </a>
                 </div>
                 <h4 className="list_item_text">
                   <a href="javascript:;">
-                    <span>I=U=WE:序</span>
+                    <span>敦煌定若远</span>
                   </a>
                 </h4>
                 <div className="list_item_author">
                   <a href="javascript:;">
-                    <span>BOY STORY</span>
+                    <span>汐音社</span>
                   </a>
                 </div>
                 <div className="list_item_price">
-                  <span>￥10</span>
+                  <span>￥20</span>
                   <div className="list_item_button">
                     <a href="javascript:;">
                       <span>立即购买</span>
@@ -550,21 +415,21 @@ export default class Album extends Component{
               <li className="list_item">
                 <div className="list_item_img">
                   <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000004TSoOf1Ehr9l.jpg?max_age=2592000" alt=""/>
                   </a>
                 </div>
                 <h4 className="list_item_text">
                   <a href="javascript:;">
-                    <span>I=U=WE:序</span>
+                    <span>大自在</span>
                   </a>
                 </h4>
                 <div className="list_item_author">
                   <a href="javascript:;">
-                    <span>BOY STORY</span>
+                    <span>粒粒</span>
                   </a>
                 </div>
                 <div className="list_item_price">
-                  <span>￥10</span>
+                  <span>￥1</span>
                   <div className="list_item_button">
                     <a href="javascript:;">
                       <span>立即购买</span>
@@ -578,28 +443,28 @@ export default class Album extends Component{
         </div>
         <div className="main">
           <div className="main_header">
-            <h2>最新上架</h2>
+            <h2>2019新生力量绽放</h2>
           </div>
           <div className="main_content">
             <ul className="main_content_list">
               <li className="list_item">
                 <div className="list_item_img">
                   <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000019Oi682i0RfX.jpg?max_age=2592000" alt=""/>
                   </a>
                 </div>
                 <h4 className="list_item_text">
                   <a href="javascript:;">
-                    <span>I=U=WE:序</span>
+                    <span>YOUNG</span>
                   </a>
                 </h4>
                 <div className="list_item_author">
                   <a href="javascript:;">
-                    <span>BOY STORY</span>
+                    <span>蔡徐坤</span>
                   </a>
                 </div>
                 <div className="list_item_price">
-                  <span>￥10</span>
+                  <span>￥5</span>
                   <div className="list_item_button">
                     <a href="javascript:;">
                       <span>立即购买</span>
@@ -610,21 +475,21 @@ export default class Album extends Component{
               <li className="list_item">
                 <div className="list_item_img">
                   <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000002WAzsK3zOPmi.jpg?max_age=2592000" alt=""/>
                   </a>
                 </div>
                 <h4 className="list_item_text">
                   <a href="javascript:;">
-                    <span>I=U=WE:序</span>
+                    <span>就要掷地有声的炸裂</span>
                   </a>
                 </h4>
                 <div className="list_item_author">
                   <a href="javascript:;">
-                    <span>BOY STORY</span>
+                    <span>RISE</span>
                   </a>
                 </div>
                 <div className="list_item_price">
-                  <span>￥10</span>
+                  <span>￥12</span>
                   <div className="list_item_button">
                     <a href="javascript:;">
                       <span>立即购买</span>
@@ -635,21 +500,21 @@ export default class Album extends Component{
               <li className="list_item">
                 <div className="list_item_img">
                   <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000018oANt3Hd7ZE.jpg?max_age=2592000" alt=""/>
                   </a>
                 </div>
                 <h4 className="list_item_text">
                   <a href="javascript:;">
-                    <span>I=U=WE:序</span>
+                    <span>立风</span>
                   </a>
                 </h4>
                 <div className="list_item_author">
                   <a href="javascript:;">
-                    <span>BOY STORY</span>
+                    <span>火箭少女101</span>
                   </a>
                 </div>
                 <div className="list_item_price">
-                  <span>￥10</span>
+                  <span>￥27</span>
                   <div className="list_item_button">
                     <a href="javascript:;">
                       <span>立即购买</span>
@@ -660,21 +525,21 @@ export default class Album extends Component{
               <li className="list_item">
                 <div className="list_item_img">
                   <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000040MnqD3iJQUW.jpg?max_age=2592000" alt=""/>
                   </a>
                 </div>
                 <h4 className="list_item_text">
                   <a href="javascript:;">
-                    <span>I=U=WE:序</span>
+                    <span>UNLOCK</span>
                   </a>
                 </h4>
                 <div className="list_item_author">
                   <a href="javascript:;">
-                    <span>BOY STORY</span>
+                    <span>UNINE</span>
                   </a>
                 </div>
                 <div className="list_item_price">
-                  <span>￥10</span>
+                  <span>￥9</span>
                   <div className="list_item_button">
                     <a href="javascript:;">
                       <span>立即购买</span>
@@ -685,21 +550,21 @@ export default class Album extends Component{
               <li className="list_item">
                 <div className="list_item_img">
                   <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000000SVLvW0snMWF.jpg?max_age=2592000" alt=""/>
                   </a>
                 </div>
                 <h4 className="list_item_text">
                   <a href="javascript:;">
-                    <span>I=U=WE:序</span>
+                    <span>ESCAPE.</span>
                   </a>
                 </h4>
                 <div className="list_item_author">
                   <a href="javascript:;">
-                    <span>BOY STORY</span>
+                    <span>林彦俊</span>
                   </a>
                 </div>
                 <div className="list_item_price">
-                  <span>￥10</span>
+                  <span>￥4</span>
                   <div className="list_item_button">
                     <a href="javascript:;">
                       <span>立即购买</span>
@@ -713,28 +578,28 @@ export default class Album extends Component{
         </div>
         <div className="main">
           <div className="main_header">
-            <h2>最新上架</h2>
+            <h2>2019内地专辑推荐</h2>
           </div>
           <div className="main_content">
             <ul className="main_content_list">
               <li className="list_item">
                 <div className="list_item_img">
                   <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000004M8HLn4QOyyn.jpg?max_age=2592000" alt=""/>
                   </a>
                 </div>
                 <h4 className="list_item_text">
                   <a href="javascript:;">
-                    <span>I=U=WE:序</span>
+                    <span>HONEY</span>
                   </a>
                 </h4>
                 <div className="list_item_author">
                   <a href="javascript:;">
-                    <span>BOY STORY</span>
+                    <span>张艺兴</span>
                   </a>
                 </div>
                 <div className="list_item_price">
-                  <span>￥10</span>
+                  <span>￥8</span>
                   <div className="list_item_button">
                     <a href="javascript:;">
                       <span>立即购买</span>
@@ -745,21 +610,21 @@ export default class Album extends Component{
               <li className="list_item">
                 <div className="list_item_img">
                   <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000000d4ZXm4JElgo.jpg?max_age=2592000" alt=""/>
                   </a>
                 </div>
                 <h4 className="list_item_text">
                   <a href="javascript:;">
-                    <span>I=U=WE:序</span>
+                    <span>哇</span>
                   </a>
                 </h4>
                 <div className="list_item_author">
                   <a href="javascript:;">
-                    <span>BOY STORY</span>
+                    <span>李宇春</span>
                   </a>
                 </div>
                 <div className="list_item_price">
-                  <span>￥10</span>
+                  <span>￥20</span>
                   <div className="list_item_button">
                     <a href="javascript:;">
                       <span>立即购买</span>
@@ -770,21 +635,21 @@ export default class Album extends Component{
               <li className="list_item">
                 <div className="list_item_img">
                   <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000002tGMcj2ScmPy.jpg?max_age=2592000" alt=""/>
                   </a>
                 </div>
                 <h4 className="list_item_text">
-                  <a href="javascript:;">
-                    <span>I=U=WE:序</span>
+                  <a href="javascript:;">l
+                    <span>Π-volume.l</span>
                   </a>
                 </h4>
                 <div className="list_item_author">
                   <a href="javascript:;">
-                    <span>BOY STORY</span>
+                    <span>鹿晗</span>
                   </a>
                 </div>
                 <div className="list_item_price">
-                  <span>￥10</span>
+                  <span>￥3</span>
                   <div className="list_item_button">
                     <a href="javascript:;">
                       <span>立即购买</span>
@@ -795,21 +660,21 @@ export default class Album extends Component{
               <li className="list_item">
                 <div className="list_item_img">
                   <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000004COjBT25RdIp.jpg?max_age=2592000" alt=""/>
                   </a>
                 </div>
                 <h4 className="list_item_text">
                   <a href="javascript:;">
-                    <span>I=U=WE:序</span>
+                    <span>破晓</span>
                   </a>
                 </h4>
                 <div className="list_item_author">
                   <a href="javascript:;">
-                    <span>BOY STORY</span>
+                    <span>吴亦凡</span>
                   </a>
                 </div>
                 <div className="list_item_price">
-                  <span>￥10</span>
+                  <span>￥3</span>
                   <div className="list_item_button">
                     <a href="javascript:;">
                       <span>立即购买</span>
@@ -820,21 +685,21 @@ export default class Album extends Component{
               <li className="list_item">
                 <div className="list_item_img">
                   <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000001xUYaL2nggfC.jpg?max_age=2592000" alt=""/>
                   </a>
                 </div>
                 <h4 className="list_item_text">
                   <a href="javascript:;">
-                    <span>I=U=WE:序</span>
+                    <span>LUNAR</span>
                   </a>
                 </h4>
                 <div className="list_item_author">
                   <a href="javascript:;">
-                    <span>BOY STORY</span>
+                    <span>周笔畅</span>
                   </a>
                 </div>
                 <div className="list_item_price">
-                  <span>￥10</span>
+                  <span>￥20</span>
                   <div className="list_item_button">
                     <a href="javascript:;">
                       <span>立即购买</span>
@@ -848,28 +713,28 @@ export default class Album extends Component{
         </div>
         <div className="main">
           <div className="main_header">
-            <h2>最新上架</h2>
+            <h2>2019韩国专辑推荐</h2>
           </div>
           <div className="main_content">
             <ul className="main_content_list">
               <li className="list_item">
                 <div className="list_item_img">
                   <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000004VaOJ60Mpgnw.jpg?max_age=2592000" alt=""/>
                   </a>
                 </div>
                 <h4 className="list_item_text">
                   <a href="javascript:;">
-                    <span>I=U=WE:序</span>
+                    <span>What a life-The Mini Al...</span>
                   </a>
                 </h4>
                 <div className="list_item_author">
                   <a href="javascript:;">
-                    <span>BOY STORY</span>
+                    <span>EXO-SC</span>
                   </a>
                 </div>
                 <div className="list_item_price">
-                  <span>￥10</span>
+                  <span>￥18</span>
                   <div className="list_item_button">
                     <a href="javascript:;">
                       <span>立即购买</span>
@@ -880,21 +745,21 @@ export default class Album extends Component{
               <li className="list_item">
                 <div className="list_item_img">
                   <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000002ci94M4fMYjm.jpg?max_age=2592000" alt=""/>
                   </a>
                 </div>
                 <h4 className="list_item_text">
                   <a href="javascript:;">
-                    <span>I=U=WE:序</span>
+                    <span>City Lights</span>
                   </a>
                 </h4>
                 <div className="list_item_author">
                   <a href="javascript:;">
-                    <span>BOY STORY</span>
+                    <span>伯贤</span>
                   </a>
                 </div>
                 <div className="list_item_price">
-                  <span>￥10</span>
+                  <span>￥18</span>
                   <div className="list_item_button">
                     <a href="javascript:;">
                       <span>立即购买</span>
@@ -905,21 +770,21 @@ export default class Album extends Component{
               <li className="list_item">
                 <div className="list_item_img">
                   <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000032AHUJ2rqJdf.jpg?max_age=2592000" alt=""/>
                   </a>
                 </div>
                 <h4 className="list_item_text">
                   <a href="javascript:;">
-                    <span>I=U=WE:序</span>
+                    <span>True Colors</span>
                   </a>
                 </h4>
                 <div className="list_item_author">
                   <a href="javascript:;">
-                    <span>BOY STORY</span>
+                    <span>U-KNOW</span>
                   </a>
                 </div>
                 <div className="list_item_price">
-                  <span>￥10</span>
+                  <span>￥15</span>
                   <div className="list_item_button">
                     <a href="javascript:;">
                       <span>立即购买</span>
@@ -930,21 +795,21 @@ export default class Album extends Component{
               <li className="list_item">
                 <div className="list_item_img">
                   <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000002Ao9Zw1xJu7O.jpg?max_age=2592000" alt=""/>
                   </a>
                 </div>
                 <h4 className="list_item_text">
                   <a href="javascript:;">
-                    <span>I=U=WE:序</span>
+                    <span>WE</span>
                   </a>
                 </h4>
                 <div className="list_item_author">
                   <a href="javascript:;">
-                    <span>BOY STORY</span>
+                    <span>WINNER</span>
                   </a>
                 </div>
                 <div className="list_item_price">
-                  <span>￥10</span>
+                  <span>￥15</span>
                   <div className="list_item_button">
                     <a href="javascript:;">
                       <span>立即购买</span>
@@ -955,21 +820,156 @@ export default class Album extends Component{
               <li className="list_item">
                 <div className="list_item_img">
                   <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000003wwnm94gdbv4.jpg?max_age=2592000" alt=""/>
                   </a>
                 </div>
                 <h4 className="list_item_text">
                   <a href="javascript:;">
-                    <span>I=U=WE:序</span>
+                    <span>A Walk to Remember</span>
                   </a>
                 </h4>
                 <div className="list_item_author">
                   <a href="javascript:;">
-                    <span>BOY STORY</span>
+                    <span>允儿</span>
                   </a>
                 </div>
                 <div className="list_item_price">
-                  <span>￥10</span>
+                  <span>￥8</span>
+                  <div className="list_item_button">
+                    <a href="javascript:;">
+                      <span>立即购买</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+        <div className="main">
+          <div className="main_header">
+            <h2>2019影视剧OSt推荐</h2>
+          </div>
+          <div className="main_content">
+            <ul className="main_content_list">
+              <li className="list_item">
+                <div className="list_item_img">
+                  <a href="javascript:;">
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000002Tryw33HIGNP.jpg?max_age=2592000" alt=""/>
+                  </a>
+                </div>
+                <h4 className="list_item_text">
+                  <a href="javascript:;">
+                    <span>陈情令 国风音乐专辑</span>
+                  </a>
+                </h4>
+                <div className="list_item_author">
+                  <a href="javascript:;">
+                    <span>华语群星</span>
+                  </a>
+                </div>
+                <div className="list_item_price">
+                  <span>￥20</span>
+                  <div className="list_item_button">
+                    <a href="javascript:;">
+                      <span>立即购买</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li className="list_item">
+                <div className="list_item_img">
+                  <a href="javascript:;">
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000000xbVpz2d56fc.jpg?max_age=2592000" alt=""/>
+                  </a>
+                </div>
+                <h4 className="list_item_text">
+                  <a href="javascript:;">
+                    <span>《时间都知道》电视剧原生</span>
+                  </a>
+                </h4>
+                <div className="list_item_author">
+                  <a href="javascript:;">
+                    <span>华语群星</span>
+                  </a>
+                </div>
+                <div className="list_item_price">
+                  <span>￥12</span>
+                  <div className="list_item_button">
+                    <a href="javascript:;">
+                      <span>立即购买</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li className="list_item">
+                <div className="list_item_img">
+                  <a href="javascript:;">
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000003Klw1L2vgE4L.jpg?max_age=2592000" alt=""/>
+                  </a>
+                </div>
+                <h4 className="list_item_text">
+                  <a href="javascript:;">
+                    <span>《灵宠》第一季原生大碟</span>
+                  </a>
+                </h4>
+                <div className="list_item_author">
+                  <a href="javascript:;">
+                    <span>张靓颖/刘牧/杨秉音</span>
+                  </a>
+                </div>
+                <div className="list_item_price">
+                  <span>￥15</span>
+                  <div className="list_item_button">
+                    <a href="javascript:;">
+                      <span>立即购买</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li className="list_item">
+                <div className="list_item_img">
+                  <a href="javascript:;">
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000010AYuF3nqxhw.jpg?max_age=2592000" alt=""/>
+                  </a>
+                </div>
+                <h4 className="list_item_text">
+                  <a href="javascript:;">
+                    <span>我们很好</span>
+                  </a>
+                </h4>
+                <div className="list_item_author">
+                  <a href="javascript:;">
+                    <span>林俊杰</span>
+                  </a>
+                </div>
+                <div className="list_item_price">
+                  <span>￥3</span>
+                  <div className="list_item_button">
+                    <a href="javascript:;">
+                      <span>立即购买</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li className="list_item">
+                <div className="list_item_img">
+                  <a href="javascript:;">
+                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000003UP2BH2e4cXO.jpg?max_age=2592000" alt=""/>
+                  </a>
+                </div>
+                <h4 className="list_item_text">
+                  <a href="javascript:;">
+                    <span>迟爱</span>
+                  </a>
+                </h4>
+                <div className="list_item_author">
+                  <a href="javascript:;">
+                    <span>郁可唯</span>
+                  </a>
+                </div>
+                <div className="list_item_price">
+                  <span>￥3</span>
                   <div className="list_item_button">
                     <a href="javascript:;">
                       <span>立即购买</span>
