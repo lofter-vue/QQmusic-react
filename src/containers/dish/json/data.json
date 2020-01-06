@@ -1,0 +1,151 @@
+{
+  "code": 0,
+  "ts": 1578296318372,
+  "new_album": {
+      "code": 0,
+      "data": {
+          "albums": [
+              {   
+                  "pic":"https://y.gtimg.cn/music/photo_new/T002R300x300M0000033EuZh0ycXSl_1.jpg?max_age=2592000",
+                  "area":0,
+                  "name": "耳语",
+                  "release_time": "2020-01-03",
+                  "singers":"麦小兜"
+              },
+              {   
+                  "pic":"https://y.gtimg.cn/music/photo_new/T002R300x300M000001oyQZs0O90mm_1.jpg?max_age=2592000",
+                  "name": "没有你我会怎样（暖心版）",
+                  "area":0,
+                  "release_time": "2020-01-03",
+                  "singers": "韩雪"
+              },    
+              {
+                  "name": "星空下的我",
+                  "area":0,
+                  "release_time": "2020-01-03",
+                  "singers": "戴羽彤",
+                  "pic":"https://y.gtimg.cn/music/photo_new/T002R300x300M000002VenJx4TkUNe_1.jpg?max_age=2592000"
+              },
+              {
+                  "name": "火锅",
+                  "area":0,
+                  "release_time": "2020-01-03",
+                  "singers":  "小魂",
+                  "pic":"https://y.gtimg.cn/music/photo_new/T002R300x300M000003JCJQq18dQIX_1.jpg?max_age=2592000"
+              },
+              {
+                  "name": "霓虹夜",
+                  "area":0,
+                  "release_time": "2020-01-03",
+                  "singers":  "封茗囧菌",
+                  "pic":"https://y.gtimg.cn/music/photo_new/T002R300x300M000004ItaTI2TWrKU_1.jpg?max_age=2592000"
+              },
+              {
+                  "name": "沙漏",
+                  "area":0,
+                  "release_time": "2020-01-03",
+                  "singers": "张远",
+                  "pic":"https://y.gtimg.cn/music/photo_new/T002R300x300M000000oBMhx14YWGA_1.jpg?max_age=2592000"
+              },
+              {
+                "name":"值得眷恋",
+                "area":0,
+                  "release_time": "2020-01-03",
+                  "singers": "张俪",
+                  "pic":"https://y.gtimg.cn/music/photo_new/T002R300x300M000000oBMhx14YWGA_1.jpg?max_age=2592000"
+              },
+              {
+                  "name":"梦奇地",
+                  "area":0,
+                  "release_time": "2020-01-03",
+                  "singers": "火箭少女101李紫婷",
+                  "pic":"https://y.gtimg.cn/music/photo_new/T002R300x300M000000oBMhx14YWGA_1.jpg?max_age=2592000"
+              },
+              {
+                  "name": "拜个新巢年",
+                  "area":0,
+                  "release_time": "2020-01-03",
+                  "singers": "宝石Gem",
+                  "pic":"https://y.gtimg.cn/music/photo_new/T002R300x300M000000oBMhx14YWGA_1.jpg?max_age=2592000"
+              },
+              {
+                  "name": "重生 (Original mix)",
+                  "area":0,
+                  "release_time": "2020-01-03",
+                  "singers":  "KSHMR/蔡徐坤",
+                  "pic":"https://y.gtimg.cn/music/photo_new/T002R300x300M000000oBMhx14YWGA_1.jpg?max_age=2592000"
+              },
+              {
+                  "name": "最后才懂",
+                  "area":0,
+                  "release_time": "2020-01-03",
+                  "singers":"孟西",
+                  "pic":"https://y.gtimg.cn/music/photo_new/T002R300x300M000000oBMhx14YWGA_1.jpg?max_age=2592000"
+              },
+              {
+                  "name": "这样唱好美 第11期",
+                  "area":0,
+                  "release_time": "2020-01-03",
+                  "singers": "这样唱好美",
+                  "pic":"https://y.gtimg.cn/music/photo_new/T002R300x300M000000oBMhx14YWGA_1.jpg?max_age=2592000"
+              },
+              {
+                  "name": "当渣男你不配",
+                  "area":0,
+                  "release_time": "2020-01-03",
+                  "singers": "coco这个李文",
+                  "pic":"https://y.gtimg.cn/music/photo_new/T002R300x300M000000oBMhx14YWGA_1.jpg?max_age=2592000"
+              },
+              {
+                  "name": "时光旅行者",
+                  "area":0,
+                  "release_time": "2020-01-02",
+                  "singers": "许飞",
+                  "pic":"https://y.gtimg.cn/music/photo_new/T002R300x300M000000oBMhx14YWGA_1.jpg?max_age=2592000"
+              },
+              {
+                  "name": "梦想飞扬",
+                  "area":0,
+                  "release_time": "2020-01-02",
+                  "singers": "宁静",
+                  "pic":"https://y.gtimg.cn/music/photo_new/T002R300x300M000000oBMhx14YWGA_1.jpg?max_age=2592000"
+              },
+              {
+                  "name": "恋爱密码",
+                  "area":0,
+                  "release_time": "2020-01-02",
+                  "singers":"方逸伦",
+                  "pic":"https://y.gtimg.cn/music/photo_new/T002R300x300M000000oBMhx14YWGA_1.jpg?max_age=2592000"
+              },
+              {
+                  "name": "想说爱你",
+                  "area":0,
+                  "release_time": "2020-01-02",
+                  "singers":"周艺轩",
+                  "pic":"https://y.gtimg.cn/music/photo_new/T002R300x300M000000oBMhx14YWGA_1.jpg?max_age=2592000"
+              },    
+              {
+                  "name": "恭喜你",
+                  "area":0,
+                  "release_time": "2020-01-02",
+                  "singers":"小沈阳",
+                  "pic":"https://y.gtimg.cn/music/photo_new/T002R300x300M000000oBMhx14YWGA_1.jpg?max_age=2592000"
+              },
+              {
+                  "name": "心有蓝图",
+                  "area":0,
+                  "release_time": "2020-01-02",
+                  "singers": "胡夏",
+                  "pic":"https://y.gtimg.cn/music/photo_new/T002R300x300M000000oBMhx14YWGA_1.jpg?max_age=2592000"
+              },
+              {   
+                  "area":0,
+                  "name": "火红的萨日朗",
+                  "release_time": "2020-01-01",
+                  "singers": "王小帅",
+                  "pic":"https://y.gtimg.cn/music/photo_new/T002R300x300M000000oBMhx14YWGA_1.jpg?max_age=2592000"
+              }
+          ]
+      }
+  }
+}
