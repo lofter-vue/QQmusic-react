@@ -2,7 +2,7 @@ import {SAVEUSERINFO} from "../action_type";
 
 const user = {}
 export default function operaCount(preState = user, action) {
-  let { type, data } = action
+  let { type } = action
   let newState
   switch (type) {
     case SAVEUSERINFO:
