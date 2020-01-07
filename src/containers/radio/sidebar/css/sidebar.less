@@ -1,0 +1,32 @@
+.radio_side_bar{
+  float: left;
+  position: sticky;
+  top: 35px;
+  width: 93px;
+  height: 531px;
+  background: url(../images/radio_sidebar.png) 0 0 no-repeat;
+  .radio_side_bar_item{
+    position: relative;
+    color: #000000;
+    display: block;
+    padding-left: 63px;
+    line-height: 59px;
+    font-size: 15px;
+    &.current{
+      color: #31c27c;
+      &:after{
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 37px;
+        overflow: hidden;
+        left: 0;
+        top: 50%;
+        background-color: #31c27c;
+      }
+    }
+    &:hover{
+      color: #31c27c;
+    }
+  }
+}

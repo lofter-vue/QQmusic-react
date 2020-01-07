@@ -5,37 +5,28 @@ import 'swiper/css/swiper.min.css';
 
 export default class Album extends Component{
   render(){
+    let {banners} = this.props
     return (
       <div className="js_wrap">
         <div id="js_banner_wrap">
           <div className="swiper-container">
             <ul className="swiper-wrapper">
-              <li className="swiper-slide">
-                <img src="//y.gtimg.cn/music/common//upload/t_musicmall_focus/1925354.jpg?max_age=2592000" alt=""/>
-              </li>
-              <li className="swiper-slide">
-                <img src="//y.gtimg.cn/music/common//upload/t_musicmall_focus/1915117.jpg?max_age=2592000" alt=""/>
-              </li>
-              <li className="swiper-slide">
-                <img src="//y.gtimg.cn/music/common//upload/t_musicmall_focus/1906502.jpg?max_age=2592000" alt=""/>
-              </li>
-              <li className="swiper-slide">
-                <img src="//y.gtimg.cn/music/common//upload/t_musicmall_focus/1872608.jpg?max_age=2592000" alt=""/>
-              </li>
-              <li className="swiper-slide">
-                <img src="//y.gtimg.cn/music/common//upload/t_musicmall_focus/1944071.jpg?max_age=2592000" alt=""/>
-              </li>
-              <li className="swiper-slide">
-                <img src="//y.gtimg.cn/music/common//upload/t_musicmall_focus/1940734.jpeg" alt=""/>
-              </li>
-              
+              {
+                banners.map((banner,index)=>{
+                  return(
+                    <li className="swiper-slide" key={banner.id}>
+                      <img src={banner.pic} alt=""/>
+                    </li>
+                  )
+                })
+              }
             </ul>
             <div className="swiper-pagination"></div>
-                {/* -- 如果需要导航按钮 */}
+              {/* -- 如果需要导航按钮 */}
             <div className="swiper-button-prev"></div>
             <div className="swiper-button-next"></div>
           </div>
-        </div>
+        </div>   
       </div>
     )
   }
@@ -43,7 +34,7 @@ export default class Album extends Component{
   componentDidMount(){
     var mySwiper = new Swiper('.swiper-container',{
       effect : 'coverflow',
-      slidesPerView: 2,
+      slidesPerView: 1.5,
       centeredSlides: true,
       loop:true,
       autoplay:true,

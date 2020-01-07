@@ -1,0 +1,184 @@
+{
+  "code": 0,
+  "ts": 1578314953508,
+  "getCategoryData": {
+    "code": 0,
+    "data": {
+      "page_total": 1,
+      "page_size": 20,
+      "page_index": 0,
+      "show_list": [{
+        "city": "深圳",
+        "city_id": "221",
+        "discount": 1500,
+        "hall_name": "",
+        "max_price": 15000,
+        "min_price": 8000,
+        "partner_id": "110",
+        "privilege": 2,
+        "show_id": "140955",
+        "show_info": "你有多久没经历过停电了？ 关于短暂失去光亮的时刻，现代人所能回想起来的，大概只是地球一小时那短暂的黑暗，以及电影《2012》所展示的末世光",
+        "show_name": "“银河停电夜”Space Station x咸空气 广深双专场",
+        "show_time": "2020-01-10 20:30:00",
+        "star_logo": "https://y.gtimg.cn/music/photo_new/T017M000003jTenG3S1k9P.jpg",
+        "status": 2,
+        "type_name": "演唱会"
+      }, {
+        "city": "深圳",
+        "city_id": "221",
+        "discount": 1500,
+        "hall_name": "",
+        "max_price": 128800,
+        "min_price": 38800,
+        "partner_id": "110",
+        "privilege": 2,
+        "show_id": "126357",
+        "show_info": "我们降落于世，看见昼夜更替，衰草枯杨；我们感受生命，见证斗转星移，白驹过隙；我们游历生活，目睹悲欢离合，阴晴圆缺；我们囿于幻梦，观望",
+        "show_name": "2020 张韶涵「寓言」世界巡回演唱会-深圳站",
+        "show_time": "2020-01-12 19:30:00",
+        "star_logo": "https://y.gtimg.cn/music/photo_new/T017M000002aaoae4F4Rfv.jpg",
+        "status": 2,
+        "type_name": "演唱会"
+      }, {
+        "city": "深圳",
+        "city_id": "221",
+        "discount": 1500,
+        "hall_name": "华润深圳湾体育中心“春茧” 体育馆",
+        "max_price": 118800,
+        "min_price": 38800,
+        "partner_id": "110",
+        "privilege": 2,
+        "show_id": "126668",
+        "show_info": "她短短几年时间狂揽内地及港台新人奖从《一千零一个愿望》到《青春住了谁》从《流星花园》到《海派甜心》她用歌声与演技填满了无数人的的青",
+        "show_name": "MiA觅雅文化呈现·杨丞琳“青春住了谁”巡回演唱会-深圳站",
+        "show_time": "2020-02-07 19:30:00",
+        "star_logo": "https://y.gtimg.cn/music/photo_new/T017M000004YkK7B3ooV5F.jpg",
+        "status": 2,
+        "type_name": "演唱会"
+      }, {
+        "city": "深圳",
+        "city_id": "221",
+        "discount": 1500,
+        "hall_name": "",
+        "max_price": 20000,
+        "min_price": 20000,
+        "partner_id": "110",
+        "privilege": 2,
+        "show_id": "146267",
+        "show_info": "票价：预售票160元（限量）现场票200元 VIP票220元（限量）★VIP票可享受演出前优先入场和演出后合影待遇★时间：2019年12月27日（周五）20:30场地：长",
+        "show_name": "“我有点紧张”新秀（中国新说唱2019殿军）全国巡演",
+        "show_time": "2020-03-06 20:30:00",
+        "star_logo": "https://y.gtimg.cn/music/photo_new/T017M000003IqgHE2W3Tn1.jpg",
+        "status": 2,
+        "type_name": "演唱会"
+      }, {
+        "city": "深圳",
+        "city_id": "221",
+        "discount": 1500,
+        "hall_name": "",
+        "max_price": 24000,
+        "min_price": 24000,
+        "partner_id": "110",
+        "privilege": 2,
+        "show_id": "146390",
+        "show_info": "美国浪漫才子Greg Laswell 将于2020年3月下旬首次来华巡演，分别在北京、上海、广州、深圳、成都五地与乐迷们零距离接触。 Greg Laswell出生在美国加利",
+        "show_name": "【深圳】Greg Laswell 2020 中国巡演",
+        "show_time": "2020-03-20 20:30:00",
+        "star_logo": "https://y.gtimg.cn/music/photo_new/T017M0000013pKgA0qm4Tu.jpg",
+        "status": 2,
+        "type_name": "演唱会"
+      }, {
+        "city": "深圳",
+        "city_id": "221",
+        "discount": 0,
+        "hall_name": "华润深圳湾体育中心",
+        "max_price": 129900,
+        "min_price": 39900,
+        "partner_id": "104",
+        "privilege": 0,
+        "show_id": "638322534",
+        "show_info": "最低演出时长：约120分钟(以演出现场为准)&nbsp;最低演出曲目数：约20首(以演出现场为准)简介：1998年任贤齐第一场演唱会\"98齐迹\"震撼上演可谓是万人",
+        "show_name": "2020任贤齐【齐迹】演唱会-深圳站",
+        "show_time": "2020-03-21 19:30:00",
+        "star_logo": "https://y.gtimg.cn/music/photo_new/T017M000001zPhuH2mBzgn.jpg",
+        "status": 3,
+        "type_name": "演唱会"
+      }, {
+        "city": "深圳",
+        "city_id": "221",
+        "discount": 1500,
+        "hall_name": "后青年 Hou Live",
+        "max_price": 15000,
+        "min_price": 15000,
+        "partner_id": "110",
+        "privilege": 2,
+        "show_id": "146019",
+        "show_info": "音乐人  「曹轩宾」，2020开启全新音乐旅程，「我」全国巡回演唱会正式启动。   “我”是曹轩宾音乐和人生哲思不断进化的总结不争 不抢不卑不",
+        "show_name": "曹轩宾「我」2020年巡回演唱会 深圳站",
+        "show_time": "2020-03-28 20:30:00",
+        "star_logo": "https://y.gtimg.cn/music/photo_new/T017M000002dcGBW36mMrN.jpg",
+        "status": 2,
+        "type_name": "演唱会"
+      }, {
+        "city": "深圳",
+        "city_id": "221",
+        "discount": 1500,
+        "hall_name": "",
+        "max_price": 38000,
+        "min_price": 38000,
+        "partner_id": "110",
+        "privilege": 2,
+        "show_id": "143461",
+        "show_info": "Madilyn Bailey拥有优质颜值的MADILYN BAILEY靠网络翻唱走红，她是美国创作女歌手兼知名油管主，大部分粉丝称她“麦姐”，听起来更加亲切。她的YouTube频",
+        "show_name": "【跨乐LIVE】Madilyn Bailey 2020中国巡演-深圳站",
+        "show_time": "2020-04-11 19:30:00",
+        "star_logo": "https://y.gtimg.cn/music/photo_new/T017M000000H37VN2okFzS.jpg",
+        "status": 2,
+        "type_name": "演唱会"
+      }, {
+        "city": "深圳",
+        "city_id": "221",
+        "discount": 1500,
+        "hall_name": "华润深圳湾体育中心“春茧” 体育馆",
+        "max_price": 128000,
+        "min_price": 38000,
+        "partner_id": "110",
+        "privilege": 2,
+        "show_id": "144200",
+        "show_info": "2018年12月29日、30日林宥嘉idol世界巡回演唱会唱响首站小巨蛋，idol世界巡回演唱会正式起航！演唱会开场影片的音乐就让人惊喜万分，由世界级音乐教",
+        "show_name": "林宥嘉idol世界巡回演唱会深圳站",
+        "show_time": "2020-05-16 19:30:00",
+        "star_logo": "https://y.gtimg.cn/music/photo_new/T017M000002S9Ajb0hUTzb.jpg",
+        "status": 2,
+        "type_name": "演唱会"
+      }],
+      "total_num": 9
+    }
+  },
+  "getFilter": {
+    "code": 0,
+    "data": {
+      "type_list": [{
+        "type": 0,
+        "name": "按时间",
+        "search_type_list": [{
+          "name": "全部",
+          "type": 0,
+          "num": 9
+        }, {
+          "name": "今天",
+          "type": 1,
+          "num": 0
+        }, {
+          "name": "本周",
+          "type": 2,
+          "num": 2
+        }, {
+          "name": "本月",
+          "type": 3,
+          "num": 2
+        }]
+      }]
+    }
+  }
+}
