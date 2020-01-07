@@ -14,7 +14,7 @@ export default class Album extends Component{
               {
                 banners.map((banner,index)=>{
                   return(
-                    <li className="swiper-slide">
+                    <li className="swiper-slide" key={banner.id}>
                       <img src={banner.pic} alt=""/>
                     </li>
                   )
@@ -22,11 +22,11 @@ export default class Album extends Component{
               }
             </ul>
             <div className="swiper-pagination"></div>
-                {/* -- 如果需要导航按钮 */}
+              {/* -- 如果需要导航按钮 */}
             <div className="swiper-button-prev"></div>
             <div className="swiper-button-next"></div>
           </div>
-        </div>
+        </div>   
       </div>
     )
   }
@@ -34,7 +34,7 @@ export default class Album extends Component{
   componentDidMount(){
     var mySwiper = new Swiper('.swiper-container',{
       effect : 'coverflow',
-      slidesPerView: 2,
+      slidesPerView: 1.5,
       centeredSlides: true,
       loop:true,
       autoplay:true,

@@ -17,6 +17,8 @@ class CitySearch extends Component {
   }
 
   componentDidMount() {
+
+    //如果数据请求回来，就创建scroll对象
     if(cityArr.getFirstData.data.citys.length>0){
       this.cityList = new BScroll('.wrapper',{
         clcik:true,
@@ -24,15 +26,10 @@ class CitySearch extends Component {
         scrollbar:true,
         mouseWheel:true
       })
-      console.log('new scroll');
-      this.cityList.on('scroll',({y})=>{
-        console.log(y);
-        
-      })
     }
   }
   
-
+  //控制城市框的显示隐藏
   showCity = () => {
     this.setState((prevstate)=>({
       isShowCity:!prevstate.isShowCity,
@@ -40,6 +37,7 @@ class CitySearch extends Component {
     }))
   }
 
+  //城市框按字母查找点击对应元素跳转到顶部
   letterFilter(index){
     let ul = this.refs.ulParent.children[index]
     this.cityList.scrollToElement(ul,300)
@@ -57,6 +55,13 @@ class CitySearch extends Component {
     }))
   }
 
+  //搜索关键词
+  search(value){
+    //调用父组件的搜索方法
+    this.props.searchShow(value)
+    
+  }
+
   render() {
     return (
       <div className='CitySearchContainer'>
@@ -66,7 +71,7 @@ class CitySearch extends Component {
               <p className="user_ctrl__btn_box js_open_city_dialog" data-id="0">{this.state.currentCity}</p>
               <Icon type="down" />
             </div>
-            <Search className='antDsearch' placeholder="搜索票务" size="large" onSearch={value => console.log(value)} enterButton  style={{width:489+"px",height:50+"px"}}/>
+            <Search className='antDsearch' placeholder="搜索票务" size="large" onSearch={value => this.search(value)} enterButton  style={{width:489+"px",height:50+"px"}}/>
             <div className="popup_data_detail popup_detail_city js_city_dialog" style={{display:this.state.display}}>
               <div className="popup_data_detail__cont">
                 <div className="popup_detail_city__grid">
