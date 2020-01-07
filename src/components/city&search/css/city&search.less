@@ -36,12 +36,13 @@
       background: #fff;
       box-shadow: 0 0 4px rgba(0,0,0,.35);
       border-radius: 4px;
+      z-index: 99;
       .popup_data_detail__cont{
         max-height: 400px;
         font-size: 14px;
         line-height: 22px;
         margin: 20px 24px;
-        overflow-y: auto;
+        // overflow-y: auto;
         .popup_detail_city__grid{
           width: 442px;
           padding-bottom: 2px;
@@ -50,8 +51,8 @@
             width: 442px;
             // margin-bottom: 12px;
             max-height: 144px;
-            // overflow: hidden;
-            overflow-y: auto;
+            overflow: hidden;
+            // overflow-y: auto;
             .popup_detail_city__label {
               float: left;
               margin-right: 24px;
@@ -67,6 +68,10 @@
                 margin-right: 10px;
                 font-size: 14px;
                 color: #000;
+                cursor: pointer;
+                .city_list__box:hover{
+                  color: #01bc83;
+                }
               }
             }
           }
@@ -87,6 +92,14 @@
               line-height: 20px;
               background-color: #ccc;
               border-radius: 5px;
+              cursor: pointer;
+              &.letterActive{
+                color: #fff;
+                background-color: #01bc83;
+              }
+              .letter_list__box:hover{
+                color:#01bc83;
+              }
             }
           }
         }
