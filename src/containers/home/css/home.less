@@ -1,26 +1,22 @@
 .home{
   width: 100%;
-  height: 532px;
   overflow: hidden;
   .home-music-wrapper{
     width: 100%;
     position: relative;
     overflow: hidden;
     &:hover{
-      
-      .home-music-left{
+      .swiper-button-prev,.swiper-button-prev1{
         transition: transform 0.5s;
         transform: translateX(79px);
       }
-      .home-music-right{
+      .swiper-button-next,.swiper-button-next1{
         transition: transform 0.5s;
         transform: translateX(-79px);
       }
     }
     .home-music-inner{
       width: 1200px;
-      // height: 532px;
-      background: yellow;
       position: relative;
       left: 0;
       right: 0;
@@ -34,12 +30,42 @@
         font-size: 30px;
         letter-spacing:10px;
         font-weight: bold;
+        position: relative;
+        .more{
+          position: absolute;
+          font-size: 14px;
+          right: 10px;
+          top: 50px;
+          &:hover{
+            cursor: pointer;
+            color: #31C27C;
+          }
+        }
       }
       .home-music-nav{
         width: 100%;
         height: 50px;
-        background: blue;
         position: relative;
+        .more{
+          position: absolute;
+          font-size: 14px;
+          right: 10px;
+          top: 0;
+          &:hover{
+            cursor: pointer;
+            color: #31C27C;
+          }
+        }
+        .playAll{
+          display: inline-block;
+          width: 121px;
+          height: 36px;
+          text-align: center;
+          line-height: 36px;
+          box-sizing: border-box;
+          border: 1px solid #D9D9D9;
+          font-size: 15px;
+        }
         .home-music-nav-wrapper{
           display: inline-block;
           position: absolute;
@@ -50,16 +76,31 @@
             display: inline-block;
             font-size: 15px;
             margin: 0 24px;
+            color: black;
+            &:hover{
+              cursor: pointer;
+              color: #31C27C;
+            }
+            &.hActive{
+              display: inline-block;
+              font-size: 15px;
+              margin: 0 24px;
+              color: #31C27C
+            }
+          }
+          .homeAcitve{
+            color: #31C27C !important;
           }
         }
       }
       .home-music-contianer{
         width: 1200px;
-        height: 310px;
-        background: pink;
+        .hide{
+          display: none;
+        }
       }
     }
-    .home-music-left{
+    .swiper-button-prev,.swiper-button-prev1{
       position: absolute;
       top: 230px;
       left: -79px;
@@ -70,11 +111,14 @@
       line-height: 108px;
       font-size: 32px;
       transition: transform 0.5s;
+      border: none;
+      color: #3A393A;
+      outline: none;
       &:hover{
         background: #E0E0E0;
       }
     }
-    .home-music-right{
+    .swiper-button-next,.swiper-button-next1{
       position: absolute;
       top: 230px;
       right: -79px;
@@ -85,10 +129,12 @@
       line-height: 108px;
       font-size: 32px;
       transition: transform 0.5s;
+      border: none;
+      color: #3A393A;
+      outline: none;
       &:hover{
         background: #E0E0E0;
       }
     }
   }
-
 }
