@@ -14,6 +14,8 @@ class ticketContentDetail extends Component {
 
   render(){
     let {isShow,data} = this.props
+    console.log(data);
+    
       return(
         <div className="mod_index js_detail_container"  style={isShow?{display:'block'}:{display:'none'}}>
           <div className="section_inner js_detail_content">
@@ -21,7 +23,7 @@ class ticketContentDetail extends Component {
               <ul className="ticket_list js_detail_list">{
                 data.getCategoryData.data.show_list.map((list,index)=>{
                   return(
-                    <li className="ticket_list__item js_open_link" data-url="https://y.qq.com/yanchu/detail.html?IDS=143254,110" key={list.show_id}>
+                    <li className="ticket_list__item js_open_link" data-url="https://y.qq.com/yanchu/detail.html?IDS=143254,110" key={Date.now()+index}>
                       <div  className="ticket_list__media "><img src={list.star_logo} className="ticket_list__media_img" alt=""/></div>
                       <div className="ticket_list__bd">
                         <h3 className="ticket_list__tit"><div >{list.show_name}</div></h3>

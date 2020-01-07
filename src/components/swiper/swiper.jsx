@@ -14,7 +14,7 @@ export default class Album extends Component{
               {
                 banners.map((banner,index)=>{
                   return(
-                    <li className="swiper-slide">
+                    <li className="swiper-slide" key={banner.id}>
                       <img src={banner.pic} alt=""/>
                     </li>
                   )

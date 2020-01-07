@@ -17,12 +17,19 @@ export default class Ticketing extends Component {
     currentNavIndex:0,
     data:concert,
     all:ticketAll.getFirstData.data.classes,
-    dataArr:[concert,concert,livehouse],
-    banners:ticketAll.getFirstData.data.banners
+    dataArr:[concert,concert,livehouse,livehouse,livehouse,concert],
+    banners:ticketAll.getFirstData.data.banners,
+    searchObj:{
+      getCategoryData:{
+        data:{
+          show_list:[]
+        }
+      }
+    },
   }
 
   //改变当前选中导航的index
-  updateIndex(index){
+  updateIndex=(index)=>{
     let data = this.state.dataArr[index]
     this.setState({
       currentNavIndex:index,
@@ -30,11 +37,33 @@ export default class Ticketing extends Component {
     })
   }
 
+  //根据搜索组件传递参数过滤数据
+  searchShow=(value)=>{
+    let newArr = []
+    this.state.all.forEach((item)=>{
+       item.showlist.forEach((list)=>{
+        if(list.show_name.indexOf(value)!==-1){
+          newArr.push(list)
+          let searchObj = this.state.searchObj;
+          searchObj.getCategoryData.data.show_list = newArr;
+          let dataArr = this.state.dataArr;
+          dataArr.push(searchObj)
+          this.setState({
+            dataArr,
+          })
+        }
+      })
+    })
+    
+    this.updateIndex(8)
+    
+  }
+
   render() {
     return (
       <div className='ticketingContainer'>
         <Swiper banners={this.state.banners}/>
-        <CitySearch/>
+        <CitySearch searchShow={this.searchShow}/>
         <div className="sort_tab js_nav_container">
           <div className="section_inner">
             <ul className="sort_tab_list">
