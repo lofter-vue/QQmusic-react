@@ -22,11 +22,11 @@ export default class Album extends Component{
               }
             </ul>
             <div className="swiper-pagination"></div>
-                {/* -- 如果需要导航按钮 */}
+              {/* -- 如果需要导航按钮 */}
             <div className="swiper-button-prev"></div>
             <div className="swiper-button-next"></div>
           </div>
-        </div>
+        </div>   
       </div>
     )
   }

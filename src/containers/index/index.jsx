@@ -14,7 +14,7 @@ import Singer from "../singer/singer";
 import Dish from "../dish/dish";
 import Ranking from "../ranking/ranking";
 import Classify from "../classify/classify";
-import Rdio from "../radio/radio";
+import Radio from "../radio/radio";
 import Mv from "../mv/mv";
 import Album from "../album/album";
 import Ticketing from "../ticketing/ticketing";
@@ -35,20 +35,21 @@ export default class Index extends Component{
             <Route path="/index/client" component={Client}/>
             <Route path="/index/open" component={Open}/>
             <Route path="/index/vip" component={Vip}/>
-            <Redirect to="/index/music"/>
+            <Redirect to="/index/music/home"/>
           </Switch>
         </div>
         <div className='container'>
           <Switch>
-            <Route path="/index/music/home" component={Home}/>
+            <Route path="/index/music/home/" component={Home}/>
             <Route path="/index/music/singer" component={Singer}/>
             <Route path="/index/music/dish" component={Dish}/>
             <Route path="/index/music/ranking" component={Ranking}/>
             <Route path="/index/music/classify" component={Classify}/>
-            <Route path="/index/music/radio" component={Rdio}/>
+            <Route path="/index/music/radio" component={Radio}/>
             <Route path="/index/music/mv" component={Mv}/>
             <Route path="/index/music/album" component={Album}/>
             <Route path="/index/music/ticketing" component={Ticketing}/>
+            {/* <Redirect to="/index/music/"/> */}
           </Switch>
         </div>
         <div className="footer">
