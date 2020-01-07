@@ -4,10 +4,6 @@ import './css/ticketContentList.less'
 
 class ticketContentList extends Component {
 
-  componentWillMount(){
-    console.log(this.props);
-  }
-
   render() {
     let {isShow,data} = this.props
 
