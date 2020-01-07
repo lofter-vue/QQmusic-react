@@ -48,6 +48,16 @@
       overflow: hidden;
       font-size: 14px;
       vertical-align: top;
+      &:hover{
+        .pic{
+          transform: scale(1.07);
+          transition: transform .6s;
+          .icon-bofang{
+            opacity: 1;
+            color: #000;
+          }
+        }
+      }
       .pic{
         position: relative;
         width:224px;
@@ -66,12 +76,6 @@
           opacity:0;
           transition: opacity 0.75s;
         }
-      }
-      .pic:hover .icon-bofang{
-        opacity: 1;
-      }
-      .pic:hover .album_pic{
-        transform: scale(1.5) translateZ(0) cubic-bezier(0,1.75,1);
       }
       .text{
         .album{
@@ -115,4 +119,6 @@
 } 
 .ant-pagination{
   text-align: center;
+  margin: 20px 0 !important;
+  padding: 10px 0 !important
 }  

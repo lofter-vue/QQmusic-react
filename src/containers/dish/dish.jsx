@@ -2,7 +2,6 @@ import React,{Component} from 'react'
 import {Route,NavLink,Redirect} from "react-router-dom"
 import './css/index.less'
 import Content from './content'
-var dish = require('./json/dish.json')
 export default class MyComponent extends Component{
   state = {
     category:['内地','港台','欧美','韩国','日本','其他'],
@@ -22,7 +21,7 @@ export default class MyComponent extends Component{
         <header className="nav">
           <ul className="tagList">
             {
-              dish.category.map((kind,index)=>{
+              this.state.category.map((kind,index)=>{
                   return (
                       <li className={`${this.state.currentIndex === index ? 'active': ''}`} onClick={()=>this.select(index)} key={index}>
                       <NavLink className="item" to={`/index/music/dish/${index}` }>{kind}</NavLink>
