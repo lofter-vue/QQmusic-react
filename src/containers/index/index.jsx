@@ -49,6 +49,7 @@ export default class Index extends Component{
             <Route path="/index/music/mv" component={Mv}/>
             <Route path="/index/music/album" component={Album}/>
             <Route path="/index/music/ticketing" component={Ticketing}/>
+            <Redirect to="/index/music/home"/>
           </Switch>
         </div>
         <div className="footer">
