@@ -18,7 +18,7 @@ import Rdio from "../radio/radio";
 import Mv from "../mv/mv";
 import Album from "../album/album";
 import Ticketing from "../ticketing/ticketing";
-
+import AlbumDetails from "../details/album_details";
 
 
 export default class Index extends Component{
@@ -49,6 +49,7 @@ export default class Index extends Component{
             <Route path="/index/music/mv" component={Mv}/>
             <Route path="/index/music/album" component={Album}/>
             <Route path="/index/music/ticketing" component={Ticketing}/>
+            <Route path="/index/music/details" component={AlbumDetails}/>
           </Switch>
         </div>
         <div className="footer">
