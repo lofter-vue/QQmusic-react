@@ -24,15 +24,21 @@ class ticketContentDetail extends Component {
                 data.getCategoryData.data.show_list.map((list,index)=>{
                   return(
                     <li className="ticket_list__item js_open_link" data-url="https://y.qq.com/yanchu/detail.html?IDS=143254,110" key={Date.now()+index}>
-                      <div  className="ticket_list__media "><img src={list.star_logo || list.pic_url} className="ticket_list__media_img" alt=""/></div>
+                      <a href={`https://y.qq.com/yanchu/detail.html?IDS=${list.show_id},${list.partner_id}`}>
+                        <div  className="ticket_list__media "><img src={list.star_logo || list.pic_url} className="ticket_list__media_img" alt=""/></div>
+                      </a>
                       <div className="ticket_list__bd">
-                        <h3 className="ticket_list__tit"><div >{list.show_name}</div></h3>
+                        <a href={`https://y.qq.com/yanchu/detail.html?IDS=${list.show_id},${list.partner_id}`}>
+                          <h3 className="ticket_list__tit"><div >{list.show_name}</div></h3>
+                        </a>
                         <p className="ticket_list__txt">{list.show_info}</p>
                         <span className="ticket_list__location"><i className="icon_location sprite_ticket"></i>{list.city}</span>
                         <span className="ticket_list__date"><i className="icon_date sprite_ticket"></i>{list.show_time}</span>
                         <span className="ticket_list__price"><em>¥ {list.min_price}</em> 起<span className="ticket_grid__tag"><Icon className='zuan' type="sketch" />立减</span></span>
                         <div className="ticket_list__ctrl">
+                          <a href={`https://y.qq.com/yanchu/detail.html?IDS=${list.show_id},${list.partner_id}`}>
                             <div  className="ticket_list__btn" data-url="https://y.qq.com/yanchu/detail.html?IDS=143254,110">立即购买</div>
+                          </a>
                         </div>
                       </div>
                     </li>

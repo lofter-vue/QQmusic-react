@@ -34,7 +34,7 @@ export default class Album extends Component{
   componentDidMount(){
     var mySwiper = new Swiper('.swiper-container',{
       effect : 'coverflow',
-      slidesPerView: 2,
+      slidesPerView: 1.5,
       centeredSlides: true,
       loop:true,
       autoplay:true,
