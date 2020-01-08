@@ -1,12 +1,12 @@
 import {SAVEDISHINFO} from "../action_type";
 
-const user = {}
-export default function operaCount(preState = user, action) {
-  let { type } = action
+const savedish = []
+export default function operaCount(preState = savedish, action) {
+  let { type, data } = action
   let newState
   switch (type) {
     case SAVEDISHINFO:
-      newState = SAVEDISHINFO
+      newState = data
       return newState
     default:
       return preState
