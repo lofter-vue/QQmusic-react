@@ -11,3 +11,15 @@ export const reqAlbum = () =>myAxios.get(BASE_URL+'/index/music/album')
 
 //首页为你推荐列表请求
 export const reqForyou = () =>myAxios.get(BASE_URL+'/index/music/foryou')
+
+//获取票务总数据
+export const reqTicketAll = () => myAxios.get(BASE_URL+'/index/music/ticketAll')
+
+//获取地理信息
+export const reqTicket = () => myAxios.get(BASE_URL+'/index/music/ticketing')
+
+//获取livehouse数据
+export const reqLivehouse = () => myAxios.get(BASE_URL+'/index/music/livehouse')
+
+//获取演唱会数据
+export const reqConcert  = () => myAxios.get(BASE_URL+'/index/music/yanchanghui')

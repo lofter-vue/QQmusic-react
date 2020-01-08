@@ -6,6 +6,8 @@ import 'swiper/css/swiper.min.css';
 export default class Album extends Component{
   render(){
     let {banners} = this.props
+    // console.log(banners);
+    // if(banners){
     return (
       <div className="js_wrap">
         <div id="js_banner_wrap">
@@ -29,9 +31,16 @@ export default class Album extends Component{
         </div>   
       </div>
     )
+            // }
   }
 
   componentDidMount(){
+    let {banners} = this.props;
+    console.log(banners);
+    
+    if(banners.length>0){
+      console.log(banners);
+      
     var mySwiper = new Swiper('.swiper-container',{
       effect : 'coverflow',
       slidesPerView: 1.5,
@@ -64,5 +73,6 @@ export default class Album extends Component{
         mySwiper.navigation.$nextEl.addClass('hide');
         mySwiper.navigation.$prevEl.addClass('hide');
       }
+    }
   }
 }

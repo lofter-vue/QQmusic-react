@@ -32,8 +32,8 @@ class ticketContentList extends Component {
                     return
                   }else if(index > 0 && index < 5){
                     return(
-                      <a href={`https://y.qq.com/yanchu/detail.html?IDS=${list.show_id},${list.partner_id}`}>
-                        <div className="ticket_grid__item js_open_link" data-url="https://y.qq.com/yanchu/detail.html?IDS=134212,110" key={list.show_id}>
+                      <a href={`https://y.qq.com/yanchu/detail.html?IDS=${list.show_id},${list.partner_id}`}  key={list.show_id}>
+                        <div className="ticket_grid__item js_open_link" data-url="https://y.qq.com/yanchu/detail.html?IDS=134212,110">
                           <div  className="ticket_grid__media">
                             <img src={list.pic_url} className="ticket_grid__media_img" alt="林宥嘉idol世界巡回演唱会 无锡站"/>
                           </div>

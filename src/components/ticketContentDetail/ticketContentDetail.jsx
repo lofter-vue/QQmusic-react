@@ -8,13 +8,13 @@ import './css/ticketContentDetail.less'
 class ticketContentDetail extends Component {
 
   componentWillMount(){
-    console.log(this.props);
+    // console.log(this.props);
     
   }
 
   render(){
-    let {isShow,data,isData} = this.props
-    console.log(data);
+    let {isShow,data} = this.props
+    // console.log(data);
     if(data){
       return(
         <div className="mod_index js_detail_container"  style={isShow?{display:'block'}:{display:'none'}}>
