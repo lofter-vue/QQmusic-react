@@ -20,6 +20,7 @@ import Album from "../album/album";
 import Ticketing from "../ticketing/ticketing";
 import RadioPlay from "../radioPlay/radioPlay";
 
+import AlbumDetails from "../details/album_details";
 
 
 export default class Index extends Component{
@@ -52,6 +53,7 @@ export default class Index extends Component{
             <Route path="/index/music/ticketing" component={Ticketing}/>
             <Route path="/index/music/radio_play" component={RadioPlay}/>
             {/* <Redirect to="/index/music/"/> */}
+            <Route path="/index/music/details" component={AlbumDetails}/>
           </Switch>
         </div>
         <div className="footer">

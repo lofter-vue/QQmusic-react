@@ -6,9 +6,6 @@ export default class Wonderful extends Component{
   componentDidMount(){
     new Swiper('.swiper-container',{
       loop: true,
-      pagination: {
-        el: '.swiper-pagination'
-      },
       navigation:{
         prevEl:'.swiper-button-prev',
         nextEl:'.swiper-button-next'
@@ -32,7 +29,6 @@ export default class Wonderful extends Component{
             <li><img src="//y.gtimg.cn/music/common/upload/MUSIC_FOCUS/1943360.jpg?max_age=2592000" alt="bg"/></li>
           </div>
           </ul>
-          <div className="swiper-pagination"></div>
       </div>
     )
   }

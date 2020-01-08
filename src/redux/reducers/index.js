@@ -1,6 +1,10 @@
 import {combineReducers} from "redux";
-import LoginReducer from "./reducer-login.js";
+import ForYou from "./reducer-forou.js";
+import Dish from "./reducer-dish";
+import  Album from './reducer-album.js'
 
 export default combineReducers({
-  login:LoginReducer
+  foryou:ForYou,
+  savedish:Dish,
+  album:Album
 })

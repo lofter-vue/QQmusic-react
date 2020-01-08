@@ -2,6 +2,11 @@
   width: 100%;
   .sort_tab{
     margin-bottom: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    padding: 20px;
+    background: #F5F5F5;
     .section_inner{
       max-width: 1200px;
       margin: 0 auto;
@@ -14,15 +19,82 @@
           width: 14.2857%;
           text-align: center;
           cursor: pointer;
+          &:nth-child(1) .iconF{
+            background-position: -280px 0;
+            }
+          &:nth-child(2) .iconF{
+            background-position: -40px 0;
+            }
+          &:nth-child(3) .iconF{
+            background-position: -360px 0;
+            }
+          &:nth-child(4) .iconF{
+            background-position: -80px 0;
+            }
+          &:nth-child(5) .iconF{
+            background-position: -160px 0;
+            }
+          &:nth-child(6) .iconF{
+            background-position: -200px 0;
+            }
+          &:nth-child(7) .iconF{
+            background-position: -320px 0;
+            }
           &.active{
-            color: #01bc83
+            color: #01bc83;
+            &:nth-child(1) .iconF{
+              background-position: -280px -40px;
+              }
+            &:nth-child(2) .iconF{
+              background-position: -40px -40px;
+              }
+            &:nth-child(3) .iconF{
+              background-position: -360px -40px;
+              }
+            &:nth-child(4) .iconF{
+              background-position: -80px -40px;
+              }
+            &:nth-child(5) .iconF{
+              background-position: -160px -40px;
+              }
+            &:nth-child(6) .iconF{
+              background-position: -200px -40px;
+              }
+            &:nth-child(7) .iconF{
+              background-position: -320px -40px;
+              } 
           }
           &:hover{
             color: #01bc83;
+            &:nth-child(1) .iconF{
+              background-position: -280px -40px;
+              }
+            &:nth-child(2) .iconF{
+              background-position: -40px -40px;
+              }
+            &:nth-child(3) .iconF{
+              background-position: -360px -40px;
+              }
+            &:nth-child(4) .iconF{
+              background-position: -80px -40px;
+              }
+            &:nth-child(5) .iconF{
+              background-position: -160px -40px;
+              }
+            &:nth-child(6) .iconF{
+              background-position: -200px -40px;
+              }
+            &:nth-child(7) .iconF{
+              background-position: -320px -40px;
+              }   
           }
           .iconF{
             display: inline-block;
-            font-size: 22px;
+            width: 31px;
+            height: 31px;
+            margin-right: 7px;
+            background: url('../images/icon_ticket.png');
+            }
           }
           .sort_tab_list__name{
             display: inline-block;
@@ -33,4 +105,3 @@
       }
     }
   }
-}

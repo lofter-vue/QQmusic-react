@@ -1,10 +1,19 @@
 import React,{Component} from 'react'
+import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import { saveAlbum } from "../../redux/action_creators/action-album";
+import { reqAlbum  } from "../../api/index";
 import './css/album.less'
 import Swiper from 'swiper/js/swiper.js'
 import 'swiper/css/swiper.min.css';
 
-export default class Album extends Component{
+
+@connect((state)=>({
+  album: state.album
+}),{saveAlbum})
+class Album extends Component{
   render(){
+    console.log(this.props)
     return (
       <div className="js_wrap">
         <div id="js_banner_wrap">
@@ -42,132 +51,37 @@ export default class Album extends Component{
           </div>
           <div className="main_content">
             <ul className="main_content_list">
-              <li className="list_item">
-                <div className="list_item_img">
-                  <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
-                  </a>
-                </div>
-                <h4 className="list_item_text">
-                  <a href="javascript:;">
-                    <span>I=U=WE:序</span>
-                  </a>
-                </h4>
-                <div className="list_item_author">
-                  <a href="javascript:;">
-                    <span>BOY STORY</span>
-                  </a>
-                </div>
-                <div className="list_item_price">
-                  <span>￥10</span>
-                  <div className="list_item_button">
-                    <a href="javascript:;">
-                      <span>立即购买</span>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li className="list_item">
-                <div className="list_item_img">
-                  <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000004fGBhL2Jr0qt.jpg?max_age=2592000" alt=""/>
-                  </a>
-                </div>
-                <h4 className="list_item_text">
-                  <a href="javascript:;">
-                    <span>What If</span>
-                  </a>
-                </h4>
-                <div className="list_item_author">
-                  <a href="javascript:;">
-                    <span>谭晶</span>
-                  </a>
-                </div>
-                <div className="list_item_price">
-                  <span>￥3</span>
-                  <div className="list_item_button">
-                    <a href="javascript:;">
-                      <span>立即购买</span>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li className="list_item">
-                <div className="list_item_img">
-                  <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000001sWLyI25K8lv.jpg?max_age=2592000" alt=""/>
-                  </a>
-                </div>
-                <h4 className="list_item_text">
-                  <a href="javascript:;">
-                    <span>当你和心跳一起出现</span>
-                  </a>
-                </h4>
-                <div className="list_item_author">
-                  <a href="javascript:;">
-                    <span>萧亚轩</span>
-                  </a>
-                </div>
-                <div className="list_item_price">
-                  <span>￥3</span>
-                  <div className="list_item_button">
-                    <a href="javascript:;">
-                      <span>立即购买</span>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li className="list_item">
-                <div className="list_item_img">
-                  <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000003zG2jn46gPpO.jpg?max_age=2592000" alt=""/>
-                  </a>
-                </div>
-                <h4 className="list_item_text">
-                  <a href="javascript:;">
-                    <span>过海</span>
-                  </a>
-                </h4>
-                <div className="list_item_author">
-                  <a href="javascript:;">
-                    <span>痛仰乐队</span>
-                  </a>
-                </div>
-                <div className="list_item_price">
-                  <span>￥10</span>
-                  <div className="list_item_button">
-                    <a href="javascript:;">
-                      <span>立即购买</span>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li className="list_item">
-                <div className="list_item_img">
-                  <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000003wcPYx2oSX5Y.jpg?max_age=2592000" alt=""/>
-                  </a>
-                </div>
-                <h4 className="list_item_text">
-                  <a href="javascript:;">
-                    <span>Starry Night - The 2nd Mini Album</span>
-                  </a>
-                </h4>
-                <div className="list_item_author">
-                  <a href="javascript:;">
-                    <span>BoA(宝儿)</span>
-                  </a>
-                </div>
-                <div className="list_item_price">
-                  <span>￥15</span>
-                  <div className="list_item_button">
-                    <a href="javascript:;">
-                      <span>立即购买</span>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              
+              {
+                this.props.album.map((item,index)=>{
+                  return(
+                    <li className="list_item" key={index}>
+                      <div className="list_item_img">
+                        <a href={item.buypage}>
+                          <img src={item.img} alt=""/>
+                        </a>
+                      </div>
+                      <h4 className="list_item_text">
+                        <a href="javascript:;">
+                          <span>{item.album_name}</span>
+                        </a>
+                      </h4>
+                      <div className="list_item_author">
+                        <a href="javascript:;">
+                          <span>{item.singer_name}</span>
+                        </a>
+                      </div>
+                      <div className="list_item_price">
+                        <span>￥{item.dis_price}</span>
+                        <div className="list_item_button">
+                          <Link className="list_item_button_a" to="/index/music/details">
+                            <span>立即购买</span>
+                          </Link>
+                        </div> 
+                      </div>
+                    </li>
+                  )
+                })
+              }  
             </ul>
           </div>
         </div>
@@ -986,7 +900,7 @@ export default class Album extends Component{
     )
   }
 
-  componentDidMount(){
+  async componentDidMount(){
     var mySwiper = new Swiper('.swiper-container',{
       effect : 'coverflow',
       slidesPerView: 2,
@@ -1011,13 +925,22 @@ export default class Album extends Component{
       },
     })
       //鼠标移出隐藏按钮，移入显示按钮
-      mySwiper.el.onmouseover=()=>{
-        mySwiper.navigation.$nextEl.removeClass('hide');
-        mySwiper.navigation.$prevEl.removeClass('hide');
-      }
-      mySwiper.el.onmouseout=()=>{
-        mySwiper.navigation.$nextEl.addClass('hide');
-        mySwiper.navigation.$prevEl.addClass('hide');
-      }
+    mySwiper.el.onmouseover=()=>{
+      mySwiper.navigation.$nextEl.removeClass('hide');
+      mySwiper.navigation.$prevEl.removeClass('hide');
+    }
+    mySwiper.el.onmouseout=()=>{
+      mySwiper.navigation.$nextEl.addClass('hide');
+      mySwiper.navigation.$prevEl.addClass('hide');
+    }
+
+    let result = await reqAlbum()
+    let {status,data} = result
+    if(status === 0){
+      // console.log(data)
+      this.props.saveAlbum(data)
+    }
   }
 }
+
+export default Album
