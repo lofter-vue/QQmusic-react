@@ -36,10 +36,8 @@ export default class Album extends Component{
 
   componentDidMount(){
     let {banners} = this.props;
-    console.log(banners);
     
     if(banners.length>0){
-      console.log(banners);
       
     var mySwiper = new Swiper('.swiper-container',{
       effect : 'coverflow',

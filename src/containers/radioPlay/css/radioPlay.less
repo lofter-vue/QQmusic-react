@@ -1,0 +1,110 @@
+#radioPlay{
+  width: 100%;
+  height: 800px;
+  .radioPlayContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/radio_play.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(16px); // 滤镜样式 模糊
+    opacity: .8;
+    .mask{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, .8);
+    }
+  }
+  .radioLogo{
+    position: absolute;
+    top: 160px;
+    left: 30px;
+    width: 78px;
+    height: 21px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .mod_player{
+    position: absolute;
+    width: 1200px;
+    height: 566px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 200px auto;
+    background-color: transparent;
+    .play_title{
+      width: 150px;
+      height: 36px;
+      line-height: 36px;
+      padding: 0 22px;
+      border: 1px solid #c9c9c9;
+      background: transparent;
+      border-radius: 5px;
+      margin: 0 auto;
+      cursor: pointer;
+      .play_wave{
+        display: inline-block;
+        width: 10px;
+        height: 8px;
+        margin-right: 5px;
+        background-image: url('../images/wave.gif');
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .radio_name{
+        color: #ffffff;
+        font-size: 14px;
+      }
+      .arrow_down{
+        color: #ffffff;
+        margin-left: 16px;
+      }
+    }
+    .play_content{
+      width: 654px;
+      height: 252px;
+      background-color: #ffffff;
+      margin: 115px auto;
+      .audio_play{
+        float: left;
+        width: 412px;
+        height: 100%;
+        .music_name{
+          font-size: 18px;
+          margin-top: 28px;
+          margin-left: 20px;
+          cursor: pointer;
+          &:hover{
+            color: #31c27c;
+          }
+        }
+        .music_author{
+          margin-left: 20px;
+          cursor: pointer;
+          &:hover{
+            color: #31c27c;
+          }
+        }
+        .music_play{
+          width: 100%;
+          padding: 20px;
+        }
+      }
+      img{
+        width: 242px;
+        height: 242px;
+        margin-top: 3px;
+      }
+    }
+  }
+}

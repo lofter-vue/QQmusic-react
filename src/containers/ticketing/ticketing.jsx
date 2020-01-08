@@ -46,7 +46,6 @@ class Ticketing extends Component {
   getTicket = async () => {
     let result = await reqTicket()
     let {status,data} = result;
-    console.log(data);
     
     if(status === 0){
       this.props.saveTicket(data)
@@ -77,7 +76,6 @@ class Ticketing extends Component {
 
   //根据搜索组件传递参数过滤数据
   searchShow=(value)=>{
-    console.log(value)
     let newArr = []
     let searchObj = this.state.searchObj;
     this.props.all.forEach((item)=>{
@@ -87,7 +85,6 @@ class Ticketing extends Component {
           searchObj.getCategoryData.data.show_list = newArr;
           let dataArr = this.state.dataArr;
           dataArr[8] = searchObj
-          console.log(dataArr)
           this.setState({
             dataArr,
             searchObj:{
@@ -99,9 +96,8 @@ class Ticketing extends Component {
             }
           })
 
-          console.log('haha');
         }
-        console.log(this.state.searchObj.getCategoryData.data.show_list)
+        
         if(searchObj.getCategoryData.data.show_list.length===0){
           let dataArr = this.state.dataArr;
           dataArr[8] = ''
@@ -119,7 +115,6 @@ class Ticketing extends Component {
 
   render() {
     let{Ticket,navArr}=this.props;
-    console.log(this.props);
 
     if(Ticket.banners && navArr.navArr) {
     return (

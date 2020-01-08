@@ -1,12 +1,19 @@
 import React,{Component} from 'react'
-import { Link,Route,Switch,Redirect } from "react-router-dom";
-import albumList from "../../config/album_config";
+import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import { saveAlbum } from "../../redux/action_creators/action-album";
+import { reqAlbum  } from "../../api/index";
 import './css/album.less'
 import Swiper from 'swiper/js/swiper.js'
 import 'swiper/css/swiper.min.css';
 
-export default class Album extends Component{
+
+@connect((state)=>({
+  album: state.album
+}),{saveAlbum})
+class Album extends Component{
   render(){
+    console.log(this.props)
     return (
       <div className="js_wrap">
         <div id="js_banner_wrap">
@@ -45,9 +52,9 @@ export default class Album extends Component{
           <div className="main_content">
             <ul className="main_content_list">
               {
-                albumList.map((item)=>{
+                this.props.album.map((item,index)=>{
                   return(
-                    <li className="list_item">
+                    <li className="list_item" key={index}>
                       <div className="list_item_img">
                         <a href={item.buypage}>
                           <img src={item.img} alt=""/>
@@ -893,7 +900,7 @@ export default class Album extends Component{
     )
   }
 
-  componentDidMount(){
+  async componentDidMount(){
     var mySwiper = new Swiper('.swiper-container',{
       effect : 'coverflow',
       slidesPerView: 2,
@@ -918,13 +925,22 @@ export default class Album extends Component{
       },
     })
       //鼠标移出隐藏按钮，移入显示按钮
-      mySwiper.el.onmouseover=()=>{
-        mySwiper.navigation.$nextEl.removeClass('hide');
-        mySwiper.navigation.$prevEl.removeClass('hide');
-      }
-      mySwiper.el.onmouseout=()=>{
-        mySwiper.navigation.$nextEl.addClass('hide');
-        mySwiper.navigation.$prevEl.addClass('hide');
-      }
+    mySwiper.el.onmouseover=()=>{
+      mySwiper.navigation.$nextEl.removeClass('hide');
+      mySwiper.navigation.$prevEl.removeClass('hide');
+    }
+    mySwiper.el.onmouseout=()=>{
+      mySwiper.navigation.$nextEl.addClass('hide');
+      mySwiper.navigation.$prevEl.addClass('hide');
+    }
+
+    let result = await reqAlbum()
+    let {status,data} = result
+    if(status === 0){
+      // console.log(data)
+      this.props.saveAlbum(data)
+    }
   }
 }
+
+export default Album
