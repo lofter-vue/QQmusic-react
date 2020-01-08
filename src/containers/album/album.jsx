@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 import { Link,Route,Switch,Redirect } from "react-router-dom";
-
+import albumList from "../../config/album_config";
 import './css/album.less'
 import Swiper from 'swiper/js/swiper.js'
 import 'swiper/css/swiper.min.css';
@@ -44,132 +44,37 @@ export default class Album extends Component{
           </div>
           <div className="main_content">
             <ul className="main_content_list">
-              <li className="list_item">
-                <div className="list_item_img">
-                  <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M0000036W7VC0zFG9K.jpg?max_age=2592000" alt=""/>
-                  </a>
-                </div>
-                <h4 className="list_item_text">
-                  <a href="javascript:;">
-                    <span>I=U=WE:序</span>
-                  </a>
-                </h4>
-                <div className="list_item_author">
-                  <a href="javascript:;">
-                    <span>BOY STORY</span>
-                  </a>
-                </div>
-                <div className="list_item_price">
-                  <span>￥10</span>
-                  <div className="list_item_button">
-                    <Link className="list_item_button_a" to="/index/music/details">
-                      <span>立即购买</span>
-                    </Link>
-                  </div> 
-                </div>
-              </li>
-              <li className="list_item">
-                <div className="list_item_img">
-                  <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000004fGBhL2Jr0qt.jpg?max_age=2592000" alt=""/>
-                  </a>
-                </div>
-                <h4 className="list_item_text">
-                  <a href="javascript:;">
-                    <span>What If</span>
-                  </a>
-                </h4>
-                <div className="list_item_author">
-                  <a href="javascript:;">
-                    <span>谭晶</span>
-                  </a>
-                </div>
-                <div className="list_item_price">
-                  <span>￥3</span>
-                  <div className="list_item_button">
-                    <a href="javascript:;">
-                      <span>立即购买</span>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li className="list_item">
-                <div className="list_item_img">
-                  <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000001sWLyI25K8lv.jpg?max_age=2592000" alt=""/>
-                  </a>
-                </div>
-                <h4 className="list_item_text">
-                  <a href="javascript:;">
-                    <span>当你和心跳一起出现</span>
-                  </a>
-                </h4>
-                <div className="list_item_author">
-                  <a href="javascript:;">
-                    <span>萧亚轩</span>
-                  </a>
-                </div>
-                <div className="list_item_price">
-                  <span>￥3</span>
-                  <div className="list_item_button">
-                    <a href="javascript:;">
-                      <span>立即购买</span>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li className="list_item">
-                <div className="list_item_img">
-                  <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000003zG2jn46gPpO.jpg?max_age=2592000" alt=""/>
-                  </a>
-                </div>
-                <h4 className="list_item_text">
-                  <a href="javascript:;">
-                    <span>过海</span>
-                  </a>
-                </h4>
-                <div className="list_item_author">
-                  <a href="javascript:;">
-                    <span>痛仰乐队</span>
-                  </a>
-                </div>
-                <div className="list_item_price">
-                  <span>￥10</span>
-                  <div className="list_item_button">
-                    <a href="javascript:;">
-                      <span>立即购买</span>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li className="list_item">
-                <div className="list_item_img">
-                  <a href="javascript:;">
-                    <img src="//y.gtimg.cn/music/photo_new/T002R300x300M000003wcPYx2oSX5Y.jpg?max_age=2592000" alt=""/>
-                  </a>
-                </div>
-                <h4 className="list_item_text">
-                  <a href="javascript:;">
-                    <span>Starry Night - The 2nd Mini Album</span>
-                  </a>
-                </h4>
-                <div className="list_item_author">
-                  <a href="javascript:;">
-                    <span>BoA(宝儿)</span>
-                  </a>
-                </div>
-                <div className="list_item_price">
-                  <span>￥15</span>
-                  <div className="list_item_button">
-                    <a href="javascript:;">
-                      <span>立即购买</span>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              
+              {
+                albumList.map((item)=>{
+                  return(
+                    <li className="list_item">
+                      <div className="list_item_img">
+                        <a href={item.buypage}>
+                          <img src={item.img} alt=""/>
+                        </a>
+                      </div>
+                      <h4 className="list_item_text">
+                        <a href="javascript:;">
+                          <span>{item.album_name}</span>
+                        </a>
+                      </h4>
+                      <div className="list_item_author">
+                        <a href="javascript:;">
+                          <span>{item.singer_name}</span>
+                        </a>
+                      </div>
+                      <div className="list_item_price">
+                        <span>￥{item.dis_price}</span>
+                        <div className="list_item_button">
+                          <Link className="list_item_button_a" to="/index/music/details">
+                            <span>立即购买</span>
+                          </Link>
+                        </div> 
+                      </div>
+                    </li>
+                  )
+                })
+              }  
             </ul>
           </div>
         </div>
