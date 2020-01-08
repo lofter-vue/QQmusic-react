@@ -18,6 +18,7 @@ import Radio from "../radio/radio";
 import Mv from "../mv/mv";
 import Album from "../album/album";
 import Ticketing from "../ticketing/ticketing";
+import RadioPlay from "../radioPlay/radioPlay";
 
 
 
@@ -49,6 +50,7 @@ export default class Index extends Component{
             <Route path="/index/music/mv" component={Mv}/>
             <Route path="/index/music/album" component={Album}/>
             <Route path="/index/music/ticketing" component={Ticketing}/>
+            <Route path="/index/music/radio_play" component={RadioPlay}/>
             {/* <Redirect to="/index/music/"/> */}
           </Switch>
         </div>
