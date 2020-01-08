@@ -5,3 +5,5 @@ import axios from "axios";
 // export const reqLogin = (username,password) => myAxios.post(BASE_URL+`/login`,{username,password}) 
 export const reqDish = () =>axios.get(BASE_URL+'/index/music/dish') 
 
+//数字专辑获取数据
+export const reqAlbum = () =>axios.get(BASE_URL+'/index/music/album')
