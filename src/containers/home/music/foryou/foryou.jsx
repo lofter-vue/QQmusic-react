@@ -26,6 +26,7 @@ class ForYou extends Component{
     })
 
     //请求数据存入redux
+    //请求数据存入redux
     let result = await reqForyou()
     const {status,data} = result
     if(status === 0){
