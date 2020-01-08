@@ -1,4 +1,6 @@
 import React,{Component} from 'react'
+import { Link,Route,Switch,Redirect } from "react-router-dom";
+
 import './css/album.less'
 import Swiper from 'swiper/js/swiper.js'
 import 'swiper/css/swiper.min.css';
@@ -61,10 +63,10 @@ export default class Album extends Component{
                 <div className="list_item_price">
                   <span>￥10</span>
                   <div className="list_item_button">
-                    <a href="javascript:;">
+                    <Link className="list_item_button_a" to="/index/music/details">
                       <span>立即购买</span>
-                    </a>
-                  </div>
+                    </Link>
+                  </div> 
                 </div>
               </li>
               <li className="list_item">

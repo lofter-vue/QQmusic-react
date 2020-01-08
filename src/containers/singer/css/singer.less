@@ -1,46 +1,138 @@
-.singerContainer{
-  width:100%;
-  .bgimgContainer{
+.singerContainer {
+  width: 100%;
+  .bgimgContainer {
     position: relative;
     width: 100%;
     height: 376px;
     background-color: pink;
-    background: url(https://y.gtimg.cn/mediastyle/yqq/img/bg_singer.jpg) 50% 0 repeat-x;
+    background: url(https://y.gtimg.cn/mediastyle/yqq/img/bg_singer.jpg) 50% 0
+      repeat-x;
     overflow: hidden;
-    .titleContainer{
-      max-width:1200px;
+    .titleContainer {
+      max-width: 1200px;
       height: 174px;
-      margin:101px auto;
-      .singerTitle{
+      margin: 101px auto;
+      .singerTitle {
         font-size: 60px;
-        color:#fff;
+        color: #fff;
         text-align: center;
         margin-bottom: 10px;
       }
-      .loginTitle{
+      .loginTitle {
         font-size: 25px;
-        color:#fff;
+        color: #fff;
         text-align: center;
         margin-bottom: 10px;
       }
-      .buttonContainer{
-        width:174px;
+      .buttonContainer {
+        width: 174px;
         height: 48px;
         margin: 0 auto;
         text-align: center;
-        border:1px solid #ccc;
+        border: 1px solid #ccc;
         border-radius: 2px;
-        button{
-          height:46px;
+        button {
+          height: 46px;
           font-size: 18px;
           outline: none;
-          border:none;
-          background-color: rgba(100,100,100,.4);
+          border: none;
+          background-color: rgba(100, 100, 100, 0.4);
         }
       }
     }
   }
-  .main{
-    
+  .main {
+    width:100%;
+    background-color: #FAFAFA;
+    .classification_singerName_container{
+      width: 1200px;
+      margin: 0 auto;
+      .classification {
+        width: 1200px;
+        height: 223px;
+        background-color: #FBFBFD;
+        padding: 34px 0 17px 40px;
+        margin: 30px 0 20px;
+        .singer_list {
+          height: 43px;
+          .tab {
+            float: left;
+            line-height: 26px;
+            padding: 0 8px;
+            margin: 0 12px 14px 0;
+            color:black;
+            cursor:pointer;
+            &:hover{
+              color:#31C27C
+            }
+          }
+          .active{
+            background-color:#31C27C;
+            color:#fff;
+          }
+          .letterContainer {
+            display: flex;
+          }
+        }
+      }
+      .singerName{
+        width:100%;
+        .singerAvatar{
+          width:100%;
+          overflow: hidden;
+          .singerItem{
+            float: left;
+            width: 20%;
+            margin-bottom: 20px;
+            overflow: hidden;
+            .singerBox{
+              position: relative;
+              margin-right: 20px;
+              background-color: #fbfbfd;
+              min-height: 195px;
+              padding: 20px 0;
+              overflow: hidden;
+              display: flex;
+              flex-direction: column;
+              text-align: center;
+              img{
+                width: 140px;
+                height: 140px;
+                margin: 0 auto;
+                border-radius: 50%;
+              }
+            }
+          }
+        }
+        .singerAvatarHide{
+          display: none;
+        }
+        .singerList{
+          width:100%;
+          height:504px;
+          background-color: #FBFBFD;
+          margin-top:20px ;
+          .singerItem{
+            float: left;
+            width: 20%;
+            span{
+              float: left;
+              max-width: 90%;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              font-size: 14px;
+              line-height: 36px;
+              color:black;
+            }
+          }
+        }
+        .pagination{
+          background-color: #FBFBFD;
+          text-align: center;
+          height:50px;
+        }
+      }
+    }
   }
 }
