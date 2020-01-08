@@ -71,7 +71,7 @@ class CitySearch extends Component {
               <p className="user_ctrl__btn_box js_open_city_dialog" data-id="0">{this.state.currentCity}</p>
               <Icon type="down" />
             </div>
-            <Search className='antDsearch' placeholder="搜索票务" size="large" onSearch={value => this.search(value)} enterButton  style={{width:489+"px",height:50+"px"}}/>
+            <Search id='antDsearch' placeholder="搜索票务" size='large' autoSize='true' onSearch={value => this.search(value)} enterButton  style={{width:489+"px",fontSize:50+"px"}}/>
             <div className="popup_data_detail popup_detail_city js_city_dialog" style={{display:this.state.display}}>
               <div className="popup_data_detail__cont">
                 <div className="popup_detail_city__grid">
