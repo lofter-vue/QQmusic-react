@@ -1,13 +1,19 @@
 import React,{Component} from 'react'
 import { Link } from "react-router-dom";
-// import albumList from "../../config/album_config";
-import {reqAlbum  } from "../../api/index";
+import { connect } from "react-redux";
+import { saveAlbum } from "../../redux/action_creators/action-album";
+import { reqAlbum  } from "../../api/index";
 import './css/album.less'
 import Swiper from 'swiper/js/swiper.js'
 import 'swiper/css/swiper.min.css';
 
-export default class Album extends Component{
+
+@connect((state)=>({
+  album: state.album
+}),{saveAlbum})
+class Album extends Component{
   render(){
+    console.log(this.props)
     return (
       <div className="js_wrap">
         <div id="js_banner_wrap">
@@ -46,9 +52,9 @@ export default class Album extends Component{
           <div className="main_content">
             <ul className="main_content_list">
               {
-                this.result.map((item)=>{
+                this.props.album.map((item,index)=>{
                   return(
-                    <li className="list_item">
+                    <li className="list_item" key={index}>
                       <div className="list_item_img">
                         <a href={item.buypage}>
                           <img src={item.img} alt=""/>
@@ -894,7 +900,7 @@ export default class Album extends Component{
     )
   }
 
-  componentDidMount= async ()=>{
+  async componentDidMount(){
     var mySwiper = new Swiper('.swiper-container',{
       effect : 'coverflow',
       slidesPerView: 2,
@@ -929,6 +935,12 @@ export default class Album extends Component{
     }
 
     let result = await reqAlbum()
-    console.log(result)
+    let {status,data} = result
+    if(status === 0){
+      // console.log(data)
+      this.props.saveAlbum(data)
+    }
   }
 }
+
+export default Album
