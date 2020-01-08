@@ -1,23 +1,63 @@
 import React,{Component} from 'react'
+import {connect} from "react-redux" 
+import {saveDishInfo} from '../../redux/action_creators/action-dish'
+import {reqDish} from "../../api/index"
 import {Pagination} from 'antd'
 import './css/index.less'
 var data = require('./json/dish.json')
-export default class MyComponent extends Component{
-
-  currentIndex = this.props.match.params.id
-  handleChange(currentIndex,current){
-    console.log(currentIndex,current)
-    data.new_album.data[currentIndex].splice(currentIndex*current+19)
-    console.log( data.new_album.data[currentIndex])
+@connect((state)=>({dish:state.savedish}),
+{saveDishInfo})
+class Dish extends Component{
+  // state = {
+  //   arr : [],//所有数组的包裹容器
+  //   showArr:[],//页面显示的数据
+  //   clickpage:false
+  // }
+  async componentDidMount(){
+    console.log(this.props)
+    let result = await reqDish()
+    let {status,data} = result
+    if(status == 0){
+      this.props.saveDishInfo(data.new_album.data)
+    }
   }
+  // componentWillMount=()=>{
+  //   this.setState({
+  //     arr: data.new_album.data,
+  //     showArr:data.new_album.data
+  //   })
+  // }
+  currentIndex = this.props.match.params.id
+  // handleChange = (currentIndex) => {
+  //   this.setState({
+  //     clickpage:true
+  //   })
+  //   if(this.state.clickpage){
+  //     this.setState({
+  //       showArr:this.state.arr[currentIndex]
+  //     })
+  //   }else{
+  //     this.setState({
+  //       arr: data.new_album.data,
+  //       showArr:data.new_album.data
+  //     })
+  //   }
+  // }
   render(){
+    const {dish} = this.props
+    console.log(dish)
+    if(dish.length === 0){
+      return <div>aaa</div>
+    }else{
+
+    
     let currentIndex = this.props.match.params.id
     return (
       <div>
         <div className="play_all">
           <ul className="play_list">
           { 
-            data.new_album.data[currentIndex].map((playItem,index)=>{
+              dish[currentIndex].map((playItem,index)=>{
                       return (
                         <li key={index} className="play_item">
                           <div className="pic">
@@ -40,8 +80,10 @@ export default class MyComponent extends Component{
                   }
             </ul>
         </div>
-        <Pagination className="pagin" pageSize={20} onChange={this.handleChange} defaultCurrent={1} total={data.new_album.data[currentIndex].length} />
+        <Pagination className="pagin" pageSize={20}  onChange={this.handleChange} defaultCurrent={1} total={data.new_album.data[currentIndex].length} />
       </div>
     )
   }
+  }
 }
+export default Dish
