@@ -1,6 +1,6 @@
 import {combineReducers} from "redux";
-import LoginReducer from "./reducer-login.js";
+import ForYou from "./reducer-forou.js";
 
 export default combineReducers({
-  login:LoginReducer
+  foryou:ForYou
 })
