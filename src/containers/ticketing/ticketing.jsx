@@ -78,7 +78,7 @@ class Ticketing extends Component {
   searchShow=(value)=>{
     let newArr = []
     let searchObj = this.state.searchObj;
-    this.props.all.forEach((item)=>{
+    this.props.Ticket.all.forEach((item)=>{
        item.showlist.forEach((list)=>{
         if(list.show_name.indexOf(value)!==-1){
           newArr.push(list)
